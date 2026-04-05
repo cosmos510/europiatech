@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Securing Tomorrow's Servers: The New Standards for Startups — Strate</title>
+  <meta name="description" content="Zero Trust, Confidential Computing, post-quantum hardening — the new security standards every startup CTO should implement now.">
+  <link rel="alternate" type="application/rss+xml" title="Strate — RSS Feed" href="rss.xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Inter','system-ui','sans-serif'], serif: ['Playfair Display','Georgia','serif'] },
+      colors: { surface: { 1:'#0a0a0b', 2:'#111113', 3:'#1a1a1d' }, accent: { DEFAULT:'#6366f1', hover:'#818cf8' } }
+    }}}
+  </script>
+  <style>body{background:#0a0a0b}</style>
+</head>
+<body class="font-sans text-gray-300 antialiased">
+
+  <nav class="fixed top-0 w-full bg-surface-1/80 backdrop-blur-md border-b border-white/5 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-serif font-bold text-white tracking-tight hover:opacity-80 transition-opacity">Strate<span class="text-accent">.</span></a>
+      <a href="index.html#articles" class="text-sm text-gray-400 hover:text-white transition-colors">← All analysis</a>
+    </div>
+  </nav>
+
+  <main class="pt-32 pb-20 px-6">
+    <article class="max-w-3xl mx-auto">
+
+      <div class="mb-12">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="text-xs font-medium text-emerald-400 bg-emerald-400/10 px-2.5 py-1 rounded">Infrastructure</span>
+          <span class="text-xs text-gray-500">9 min read</span>
+        </div>
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-white leading-tight mb-4">Securing Tomorrow's Servers: The New Standards for Startups</h1>
+        <div class="flex items-center gap-4 text-sm text-gray-500">
+          <time datetime="2026-02-12">February 12, 2026</time>
+          <span>·</span>
+          <span>By Maxime Martin, Lead Analyst</span>
+        </div>
+      </div>
+
+      <div class="space-y-8 text-gray-400 leading-relaxed text-[17px]">
+
+        <p class="text-lg text-gray-300 leading-relaxed">
+          As cyberattacks become increasingly professionalised, the traditional security perimeter is collapsing. For a European startup in 2026, security is no longer an optional module — it's the very foundation of its infrastructure.
+        </p>
+
+        <hr class="border-white/5 my-10">
+
+        <h2 class="font-serif text-2xl font-bold text-white">Implementing Zero Trust</h2>
+        <p>
+          Why "never trust, always verify" has become the standard for production environment access.
+        </p>
+        <p>
+          The perimeter model — a firewall at the edge, a VPN for remote access — relies on an obsolete assumption: everything "inside" the network is trusted. Lateral movement attacks have demonstrated the absurdity of this approach. Once an attacker breaches the perimeter, they move freely.
+        </p>
+        <p>
+          Zero Trust inverts the logic. Every request, every connection, every access is verified independently, regardless of its origin. In practice, this means:
+        </p>
+        <ul class="list-none space-y-3 pl-0">
+          <li class="flex items-start gap-3"><span class="text-emerald-400 mt-1">▸</span><span>mTLS (mutual TLS) between every microservice — no more cleartext communication inside the cluster.</span></li>
+          <li class="flex items-start gap-3"><span class="text-emerald-400 mt-1">▸</span><span>Identity-aware proxy for every internal tool access — no more VPN as a master key.</span></li>
+          <li class="flex items-start gap-3"><span class="text-emerald-400 mt-1">▸</span><span>Network microsegmentation — every workload is isolated, communication rules are explicit.</span></li>
+        </ul>
+        <p>
+          The tools exist and are accessible to startups: Tailscale for mesh networking, Cloudflare Access for identity proxy, or open-source solutions like Istio for service mesh.
+        </p>
+
+        <h2 class="font-serif text-2xl font-bold text-white mt-12">Confidential Computing</h2>
+        <p>
+          A focus on secure enclaves (TEEs) that allow sensitive data processing in the cloud without the host provider being able to access it.
+        </p>
+        <p>
+          Encryption protects data at rest (on disk) and in transit (on the network). But during processing, data sits in cleartext in memory — accessible to anyone with privileged access to the server, including the cloud host.
+        </p>
+        <p>
+          Confidential Computing solves this through Trusted Execution Environments (TEEs): hardware enclaves — Intel SGX, AMD SEV-SNP, ARM CCA — that encrypt data even during processing. The host OS, hypervisor and cloud administrator have zero visibility into what happens inside the enclave.
+        </p>
+        <p>
+          The use cases are immediate for European startups: processing medical data in the cloud without leak risk, running financial calculations on client data in full compliance, or training AI models on sensitive datasets without exposing them.
+        </p>
+
+        <h2 class="font-serif text-2xl font-bold text-white mt-12">Post-Quantum Hardening</h2>
+        <p>
+          First steps to migrate encryption protocols to standards capable of withstanding future quantum computing capabilities.
+        </p>
+        <p>
+          NIST finalised the first post-quantum cryptography standards in 2024: CRYSTALS-Kyber for key exchange, CRYSTALS-Dilithium for digital signatures. The threat isn't theoretical — the "harvest now, decrypt later" strategy is already active: state actors are intercepting and storing encrypted communications today, waiting until they have a quantum computer capable of decrypting them.
+        </p>
+        <p>
+          For a startup, full migration isn't urgent, but the inventory is. Step one: map every encryption protocol in use (TLS, SSH, code signing, certificates). Step two: plan TLS certificate migration to hybrid algorithms (classical + post-quantum) by 2028. Libraries like liboqs (Open Quantum Safe) already allow testing these implementations.
+        </p>
+
+        <hr class="border-white/5 my-10">
+
+        <div class="bg-surface-2 border border-emerald-400/20 rounded-2xl p-8">
+          <h2 class="font-serif text-xl font-bold text-white mb-3 flex items-center gap-2">
+            <span class="text-emerald-400">▸</span> Advice for CTOs
+          </h2>
+          <p>
+            Start with strict isolation of your CI/CD pipelines. That's where the biggest vulnerability in tech companies lies today. A compromised runner gives access to secrets, source code and deployment environments. Isolate runners, rotate secrets, audit every pipeline step. The rest will follow.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-white/5 flex justify-between items-center">
+        <a href="article-1.html" class="text-accent hover:text-white transition-colors text-sm">← Previous article</a>
+        <a href="article-3.html" class="text-accent hover:text-white transition-colors text-sm">Next article →</a>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-12 px-6 border-t border-white/5">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-gray-500">
+      <a href="index.html" class="font-serif text-white text-lg hover:opacity-80 transition-opacity">Strate<span class="text-accent">.</span></a>
+      <div class="text-center">
+        <p>© 2026 Strate. Independent tech media.</p>
+        <p class="mt-1">Website by <a href="https://www.webamax.fr" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors">Webamax</a></p>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="index.html#newsletter" class="hover:text-white transition-colors">Contact</a>
+        <a href="press.html" class="hover:text-white transition-colors">Press</a>
+        <a href="legal.html" class="hover:text-white transition-colors">Legal Notice</a>
+        <a href="rss.xml" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">RSS</a>
+        <a href="#" aria-label="LinkedIn" class="text-gray-500 hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" aria-label="X (Twitter)" class="text-gray-500 hover:text-white transition-colors">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

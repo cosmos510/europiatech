@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strate — Independent Technical Analysis</title>
+    <link>https://strate.io</link>
+    <description>Infrastructure, sovereign AI, cybersecurity — European innovation seen from the foundations.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Feb 2026 08:00:00 +0100</lastBuildDate>
+    <atom:link href="https://strate.io/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Preview: London Tech Week 2026 — Who We Want to Interview &amp; Key Companies to Watch</title>
+      <link>https://strate.io/article-4.html</link>
+      <guid isPermaLink="true">https://strate.io/article-4.html</guid>
+      <pubDate>Wed, 18 Feb 2026 08:00:00 +0100</pubDate>
+      <category>Event Preview</category>
+      <description>Strate's editorial preview of London Tech Week 2026: key companies to watch, who we want to interview, and the technical themes we'll be tracking on the ground.</description>
+    </item>
+
+    <item>
+      <title>The State of AI Innovation in Europe: 2026 Outlook</title>
+      <link>https://strate.io/article-1.html</link>
+      <guid isPermaLink="true">https://strate.io/article-1.html</guid>
+      <pubDate>Sun, 15 Feb 2026 08:00:00 +0100</pubDate>
+      <category>Deep Tech</category>
+      <description>2026 marks a turning point for European AI. From Mistral to Kyutai, Europe is imposing a vision centred on efficiency and transparency. Analysis of Small Language Models, open source as a sovereignty shield, and the AI Act as a B2B trust label.</description>
+    </item>
+
+    <item>
+      <title>Securing Tomorrow's Servers: The New Standards for Startups</title>
+      <link>https://strate.io/article-2.html</link>
+      <guid isPermaLink="true">https://strate.io/article-2.html</guid>
+      <pubDate>Thu, 12 Feb 2026 08:00:00 +0100</pubDate>
+      <category>Infrastructure</category>
+      <description>As cyberattacks become increasingly professionalised, the traditional security perimeter is collapsing. Zero Trust, Confidential Computing and post-quantum hardening: the three pillars of infrastructure security for European startups in 2026.</description>
+    </item>
+
+    <item>
+      <title>Preview: 3 Key Themes to Watch at Tech Conferences in 2026</title>
+      <link>https://strate.io/article-3.html</link>
+      <guid isPermaLink="true">https://strate.io/article-3.html</guid>
+      <pubDate>Sun, 08 Feb 2026 08:00:00 +0100</pubDate>
+      <category>Event</category>
+      <description>AI and industrial cybersecurity convergence, cloud sovereignty beyond GDPR, datacenter energy efficiency — our technical reading grid for 2026 tech conferences.</description>
+    </item>
+
+  </channel>
+</rss>

@@ -1,0 +1,10 @@
+body { background: #0a0a0b; }
+.dropcap::first-letter {
+  font-family: 'Playfair Display', serif;
+  float: left;
+  font-size: 4.5rem;
+  line-height: 0.8;
+  margin-top: 0.15em;
+  margin-right: 0.1em;
+  color: #6366f1;
+}
