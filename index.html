@@ -256,16 +256,127 @@
       <p data-reveal class="text-accent-text text-sm font-medium tracking-widest uppercase mb-2">Newsletter</p>
       <h2 data-reveal data-reveal-delay="1" class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">European AI &amp; deep tech intelligence, every week.</h2>
       <p data-reveal data-reveal-delay="2" class="text-gray-300 mb-8">Join 500+ engineers, founders &amp; investors. One in-depth analysis on European AI, sovereign infrastructure and deep tech per week. No spam, no disguised partnerships.</p>
-      <form id="newsletter-form" data-reveal data-reveal-delay="3" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" novalidate>
-        <!-- a11y: label masqué visuellement mais accessible aux lecteurs d'écran -->
-        <label for="email-input" class="sr-only">Email address</label>
-        <input id="email-input" type="email" name="fields[email]" required placeholder="Email" autocomplete="email" aria-describedby="form-error" class="flex-1 px-4 py-3 bg-surface-3 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent/30 transition-all duration-300">
-        <button id="submit-btn" type="submit" class="btn-primary px-6 py-3 bg-accent text-white rounded-lg font-medium hover:bg-accent-hover active:bg-accent-dark whitespace-nowrap flex items-center justify-center gap-2 min-w-[140px]">Subscribe</button>
-      </form>
-      <!-- a11y: aria-live annonce les messages dynamiques aux lecteurs d'écran -->
-      <p id="form-error" class="form-msg text-xs text-red-400 mt-3" role="alert" aria-live="assertive">Please enter a valid email address.</p>
-      <p id="form-success" class="form-msg text-sm text-emerald-400 mt-3" role="status" aria-live="polite">✓ Thank you! You have successfully joined our subscriber list.</p>
-      <!-- a11y: text-gray-600 a un contraste insuffisant (~2.4:1), remonté à text-gray-400 -->
+
+      <!-- MailerLite embedded form — styled to match site theme -->
+      <style>
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper {
+          background-color: transparent !important;
+          border: none !important;
+          border-radius: 0 !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody {
+          padding: 0 !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent {
+          display: none !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+          background-color: #1a1a1d !important;
+          color: #ffffff !important;
+          border-color: rgba(255,255,255,0.1) !important;
+          border-radius: 0.5rem !important;
+          font-family: 'Source Serif 4', serif !important;
+          font-size: 16px !important;
+          padding: 12px 16px !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::placeholder {
+          color: #6b7280 !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:focus {
+          border-color: #6366f1 !important;
+          outline: none !important;
+          box-shadow: 0 0 0 1px rgba(99,102,241,0.3) !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+          background-color: #6366f1 !important;
+          border: none !important;
+          border-radius: 0.5rem !important;
+          font-family: 'Source Serif 4', serif !important;
+          font-size: 16px !important;
+          font-weight: 500 !important;
+          padding: 12px 24px !important;
+          transition: background-color 0.2s !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+          background-color: #818cf8 !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent,
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+          margin: 0 !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent {
+          margin-bottom: 12px !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+          padding: 20px 0 !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+          color: #ffffff !important;
+          font-family: 'Playfair Display', Georgia, serif !important;
+        }
+        #mlb2-39474800.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+          color: #34d399 !important;
+          font-family: 'Source Serif 4', serif !important;
+        }
+        @media (min-width: 640px) {
+          #mlb2-39474800 .ml-form-embedBody form {
+            display: flex !important;
+            gap: 12px !important;
+            align-items: flex-start !important;
+          }
+          #mlb2-39474800 .ml-form-formContent {
+            flex: 1 !important;
+            margin-bottom: 0 !important;
+          }
+          #mlb2-39474800 .ml-form-embedSubmit {
+            width: auto !important;
+            flex-shrink: 0 !important;
+          }
+          #mlb2-39474800 .ml-form-embedSubmit button {
+            white-space: nowrap !important;
+          }
+          #mlb2-39474800 .ml-form-fieldRow {
+            margin: 0 !important;
+          }
+        }
+      </style>
+
+      <div data-reveal data-reveal-delay="3" class="max-w-md mx-auto">
+        <div id="mlb2-39474800" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-39474800">
+          <div class="ml-form-align-center">
+            <div class="ml-form-embedWrapper embedForm">
+              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                <div class="ml-form-embedContent" style=""><h4>Newsletter</h4><p>Signup for news and special offers!</p></div>
+                <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2245625/forms/183935330376746350/subscribe" data-code="" method="post" target="_blank">
+                  <div class="ml-form-formContent">
+                    <div class="ml-form-fieldRow ml-last-item">
+                      <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                        <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                      </div>
+                    </div>
+                  </div>
+                  <input type="hidden" name="ml-submit" value="1">
+                  <div class="ml-form-embedSubmit">
+                    <button type="submit" class="primary">Subscribe</button>
+                    <button disabled="disabled" style="display:none;" type="button" class="loading">
+                      <div class="ml-form-embedSubmitLoad"></div>
+                      <span class="sr-only">Loading...</span>
+                    </button>
+                  </div>
+                  <input type="hidden" name="anticsrf" value="true">
+                </form>
+              </div>
+              <div class="ml-form-successBody row-success" style="display:none">
+                <div class="ml-form-successContent">
+                  <h4>Thank you!</h4>
+                  <p>✓ You have successfully joined our subscriber list.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <p class="text-xs text-gray-400 mt-4">Unsubscribe in one click. Your data is never shared.</p>
     </div>
   </section>
@@ -281,7 +392,7 @@
         <p class="mt-1">Technical infrastructure by <a href="https://www.webamax.fr" target="_blank" rel="noopener noreferrer" class="text-accent-text hover:text-white transition-colors font-medium">Webamax</a></p>
       </div>
       <div class="flex items-center gap-6">
-        <a href="#newsletter" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+        <a href="mailto:contact@europiatech.eu" class="text-gray-400 hover:text-white transition-colors">Contact</a>
         <a href="press.html" class="text-gray-400 hover:text-white transition-colors">Press</a>
         <a href="legal.html" class="text-gray-400 hover:text-white transition-colors">Legal Notice</a>
         <a href="rss.xml" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">RSS</a>
@@ -349,69 +460,13 @@
     });
 
     // =============================================
-    // NEWSLETTER — MailerLite JSONP
+    // NEWSLETTER — MailerLite embedded form
     // =============================================
-    const ML_URL = 'https://assets.mailerlite.com/jsonp/2245625/forms/183896387240330977/subscribe';
-
-    const form = document.getElementById('newsletter-form');
-    const emailInput = document.getElementById('email-input');
-    const submitBtn = document.getElementById('submit-btn');
-    const formError = document.getElementById('form-error');
-    const formSuccess = document.getElementById('form-success');
-    const spinnerHTML = '<svg class="spinner w-5 h-5" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg>Sending…';
-
-    function hideMessages() {
-      formError.classList.remove('visible');
-      formSuccess.classList.remove('visible');
+    function ml_webform_success_39474800() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-39474800 .row-success').show();
+      $('.ml-subscribe-form-39474800 .row-form').hide();
     }
-
-    let submitted = false;
-
-    function showSuccess() {
-      if (submitted) return;
-      submitted = true;
-      submitBtn.innerHTML = '✓ Subscribed!';
-      submitBtn.classList.remove('bg-accent', 'hover:bg-accent-hover');
-      submitBtn.classList.add('bg-emerald-600');
-      formSuccess.classList.add('visible');
-      emailInput.value = '';
-      emailInput.disabled = true;
-      submitBtn.disabled = true;
-    }
-
-    window.ml_callback = showSuccess;
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      hideMessages();
-      submitted = false;
-
-      const email = emailInput.value.trim();
-      if (!/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/i.test(email)) {
-        formError.classList.add('visible');
-        emailInput.focus();
-        return;
-      }
-
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = spinnerHTML;
-
-      const script = document.createElement('script');
-      script.src = ML_URL + '?fields[email]=' + encodeURIComponent(email) + '&callback=ml_callback';
-      script.onerror = () => {
-        if (!submitted) {
-          formError.textContent = 'Something went wrong. Please try again.';
-          formError.classList.add('visible');
-          submitBtn.innerHTML = 'Subscribe';
-          submitBtn.disabled = false;
-        }
-      };
-      document.body.appendChild(script);
-
-      setTimeout(() => {
-        if (!submitted) showSuccess();
-      }, 4000);
-    });
 
     // =============================================
     // SCROLL SPY — active nav link
@@ -433,5 +488,7 @@
     }, { passive: true });
   </script>
 
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
+  <script>fetch("https://assets.mailerlite.com/jsonp/2245625/forms/183935330376746350/takel")</script>
 </body>
 </html>
