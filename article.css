@@ -386,7 +386,7 @@ h1, h2, h3 {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #6366f1;
+  color: #a5b4fc;
   margin-bottom: 0.75rem;
 }
 
@@ -409,7 +409,7 @@ h1, h2, h3 {
 .related-card .related-cta {
   font-size: 0.75rem;
   font-weight: 700;
-  color: #6366f1;
+  color: #a5b4fc;
   letter-spacing: 0.05em;
   transition: color 0.3s ease, gap 0.3s ease;
   display: inline-flex;
@@ -462,7 +462,7 @@ h1, h2, h3 {
 
 .question-block .question-item:last-child {
   border-bottom: none;
-  color: #6366f1;
+  color: #a5b4fc;
   font-weight: 700;
 }
 
