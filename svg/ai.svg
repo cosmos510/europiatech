@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" fill="#0a0a0b"/>
+  <!-- Neural network nodes -->
+  <circle cx="100" cy="60" r="12" fill="#6366f1" opacity=".9"/>
+  <circle cx="55" cy="100" r="10" fill="#818cf8" opacity=".7"/>
+  <circle cx="145" cy="100" r="10" fill="#818cf8" opacity=".7"/>
+  <circle cx="70" cy="145" r="8" fill="#6366f1" opacity=".5"/>
+  <circle cx="130" cy="145" r="8" fill="#6366f1" opacity=".5"/>
+  <circle cx="100" cy="105" r="14" fill="#6366f1"/>
+  <!-- Connections -->
+  <line x1="100" y1="60" x2="55" y2="100" stroke="#818cf8" stroke-width="1.5" opacity=".4"/>
+  <line x1="100" y1="60" x2="145" y2="100" stroke="#818cf8" stroke-width="1.5" opacity=".4"/>
+  <line x1="100" y1="60" x2="100" y2="105" stroke="#a5b4fc" stroke-width="1.5" opacity=".5"/>
+  <line x1="55" y1="100" x2="100" y2="105" stroke="#818cf8" stroke-width="1.5" opacity=".4"/>
+  <line x1="145" y1="100" x2="100" y2="105" stroke="#818cf8" stroke-width="1.5" opacity=".4"/>
+  <line x1="55" y1="100" x2="70" y2="145" stroke="#6366f1" stroke-width="1" opacity=".3"/>
+  <line x1="145" y1="100" x2="130" y2="145" stroke="#6366f1" stroke-width="1" opacity=".3"/>
+  <line x1="100" y1="105" x2="70" y2="145" stroke="#6366f1" stroke-width="1" opacity=".3"/>
+  <line x1="100" y1="105" x2="130" y2="145" stroke="#6366f1" stroke-width="1" opacity=".3"/>
+  <!-- Outer orbit ring -->
+  <circle cx="100" cy="100" r="65" stroke="#6366f1" stroke-width="1" opacity=".15" fill="none"/>
+  <circle cx="100" cy="100" r="45" stroke="#818cf8" stroke-width=".5" opacity=".1" fill="none"/>
+  <!-- Glow dot -->
+  <circle cx="100" cy="105" r="4" fill="#a5b4fc"/>
+</svg>

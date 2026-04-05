@@ -1,0 +1,176 @@
+/* ==============================================
+   style.css — EuropiaTech homepage styles
+   ============================================== */
+
+/* ===== Gradient text ===== */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==============================================
+   MOBILE-FIRST (<768px)
+   ============================================== */
+
+/* Hero — tighter on small screens */
+@media (max-width: 767px) {
+  /* Reduce hero vertical padding */
+  .hero-section {
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+  }
+
+  .hero-section .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Cards — full-width, reduced padding */
+  .article-card .p-6 {
+    padding: 1.25rem;
+  }
+
+  /* Featured card — stack vertically */
+  .article-card .md\:flex {
+    display: block;
+  }
+
+  /* Sections — tighter vertical rhythm */
+  .section-block {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  /* Footer — stack and center */
+  footer .flex.items-center.gap-6 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Lighter reveal animation on mobile */
+  [data-reveal] {
+    transform: translateY(16px);
+  }
+
+  /* Disable card hover lift on touch */
+  .article-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Disable button lift on touch */
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* ==============================================
+   DESKTOP (≥768px)
+   ============================================== */
+@media (min-width: 768px) {
+  /* Hero — generous spacing */
+  .hero-section {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(3.5rem, 6vw, 5rem);
+  }
+
+  /* Article grid — wider gaps */
+  .articles-grid {
+    gap: 2rem;
+  }
+
+  /* Featured card — horizontal layout min-height */
+  .card-featured .card-bg {
+    min-height: 280px;
+  }
+
+  /* Sections — generous vertical rhythm */
+  .section-block {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* ==============================================
+   LARGE DESKTOP (≥1024px)
+   ============================================== */
+@media (min-width: 1024px) {
+  .hero-section {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+  }
+
+  .articles-grid {
+    gap: 2.5rem;
+  }
+}
+
+/* ==============================================
+   FOCUS VISIBLE — keyboard accessibility
+   ============================================== */
+.article-card:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 4px;
+  border-radius: 1rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* ==============================================
+   NEWSLETTER INPUT — enhanced states
+   ============================================== */
+#email-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+#email-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ==============================================
+   FOOTER LINKS — hover underline
+   ============================================== */
+footer a:not(.font-serif):not([aria-label]) {
+  position: relative;
+}
+
+footer a:not(.font-serif):not([aria-label])::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #6366f1;
+  transition: width 0.3s ease;
+}
+
+footer a:not(.font-serif):not([aria-label]):hover::after {
+  width: 100%;
+}
