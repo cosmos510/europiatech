@@ -57,16 +57,27 @@ export async function POST(request: Request) {
 
     const responseData = await response.json().catch(() => ({}));
 
-    // DEBUG: Return full response info
-    return NextResponse.json({ 
-      success: response.ok,
-      debug: {
-        status: response.status,
-        mailerliteResponse: responseData,
-        apiKeyPresent: !!apiKey,
-        apiKeyLength: apiKey?.length || 0,
+    if (!response.ok) {
+      // Check if subscriber already exists (not an error for user)
+      if (
+        response.status === 400 || 
+        response.status === 409 ||
+        responseData?.message?.includes('already') ||
+        responseData?.error?.message?.includes('already')
+      ) {
+        return NextResponse.json({ 
+          success: true, 
+          message: 'Already subscribed' 
+        });
       }
-    });
+      
+      return NextResponse.json(
+        { error: 'Subscription failed. Please try again.' },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({ success: true });
     
   } catch {
     return NextResponse.json(
