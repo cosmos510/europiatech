@@ -1,276 +1,167 @@
-# EuropiaTech — European Tech Analysis Blog
+# EuropiaTech - Blog Tech Européen
 
-> Independent tech publication focused on European AI innovation, sovereign infrastructure, and deep tech analysis.
+Publication indépendante sur l'innovation AI européenne, l'infrastructure souveraine et l'analyse deep tech.
 
 **Live:** [europiatech.eu](https://europiatech.eu)
 
-![Next.js](https://img.shields.io/badge/Next.js-16.4-black?logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript)
-![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)
-![n8n](https://img.shields.io/badge/Automation-n8n-orange)
+## Stack Technique
 
----
+- **Framework**: Next.js 16 (App Router, Turbopack)
+- **Langage**: TypeScript
+- **Styling**: Tailwind CSS v4 + CSS Custom Properties
+- **Animations**: Framer Motion
+- **Newsletter**: MailerLite API
+- **Automation**: n8n (self-hosted)
+- **AI/LLM**: Groq API
+- **Hébergement**: Vercel
 
-## 🎯 Project Overview
+## Features
 
-EuropiaTech is a fully automated tech blog built with modern web technologies. The project demonstrates:
+### Publication Automatisée
 
-- **Full-stack Next.js 16** application with App Router
-- **Automated content pipeline** using n8n + AI (Groq API)
-- **API-driven publishing** with GitHub integration
-- **Newsletter system** with MailerLite
-- **Modern UI/UX** with Framer Motion animations
+Pipeline de contenu entièrement automatisé :
+- Fetch RSS (MIT Tech Review, TechCrunch EU, Ars Technica)
+- Génération d'articles via Groq LLM
+- Validation humaine via Discord
+- Publication via API GitHub
 
----
+### API de Publication
 
-## ✨ Key Features
+Endpoint REST pour créer des articles programmatiquement :
+- Conversion automatique Markdown → HTML
+- Commit direct sur GitHub via API
+- Déploiement automatique Vercel
 
-### For Recruiters & Product Managers
+### Newsletter
 
-| Feature | Description |
-|---------|-------------|
-| 🤖 **AI-Powered Content** | Automated article generation from RSS feeds using Groq LLM |
-| 📱 **Discord Approval Flow** | Human-in-the-loop review before publishing |
-| 📧 **Newsletter Integration** | MailerLite subscription with group segmentation |
-| 🔄 **CI/CD Pipeline** | Automatic deployment on Vercel |
-| 📊 **Dynamic Content** | Article counts and stats update automatically |
+Intégration MailerLite avec :
+- Validation email
+- Segmentation par groupe
+- Gestion des erreurs
 
-### For Developers
-
-| Technology | Implementation |
-|------------|----------------|
-| **Framework** | Next.js 16 (App Router, Turbopack) |
-| **Language** | TypeScript (strict mode) |
-| **Styling** | Tailwind CSS v4 + CSS Custom Properties |
-| **Animations** | Framer Motion (scroll-triggered, parallax) |
-| **API Routes** | REST endpoints for article publishing |
-| **Automation** | n8n workflows (self-hosted) |
-| **AI/LLM** | Groq API (GPT-OSS-120B) |
-
----
-
-## 🏗️ Architecture
+## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        CONTENT PIPELINE                          │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│   RSS Feeds ──► n8n ──► Groq AI ──► Discord ──► API ──► GitHub  │
-│   (3 sources)   │      (generate)   (approve)   │      (commit)  │
-│                 │                               │                │
-│                 └── Filter by keywords ─────────┘                │
-│                     (AI, Europe, Security...)                    │
-│                                                                  │
-├─────────────────────────────────────────────────────────────────┤
-│                        FRONTEND                                  │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│   Next.js 16 ◄── Vercel ◄── GitHub (auto-deploy on push)        │
-│       │                                                          │
-│       ├── /                    (Homepage + Bento Grid)           │
-│       ├── /articles            (All articles listing)            │
-│       ├── /articles/[slug]     (Article detail page)             │
-│       ├── /press               (Press kit + Brand assets)        │
-│       ├── /api/articles        (Publish API endpoint)            │
-│       └── /api/subscribe       (Newsletter registration)         │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
+RSS Feeds ──► n8n ──► Groq AI ──► Discord ──► API ──► GitHub ──► Vercel
+(3 sources)   │      (generate)   (approve)   │      (commit)   (deploy)
+              │                               │
+              └── Filter by keywords ─────────┘
 ```
 
----
-
-## 🔧 Technical Highlights
-
-### API-Driven Article Publishing
-
-```typescript
-// POST /api/articles
-// Receives article from n8n, converts Markdown to HTML, commits to GitHub
-
-const article = await request.json();
-
-// Auto-convert Markdown to HTML
-if (article.content.includes('##')) {
-  htmlContent = await marked.parse(article.content);
-}
-
-// Commit via GitHub API
-await fetch(`https://api.github.com/repos/.../contents/...`, {
-  method: 'PUT',
-  body: JSON.stringify({ content: base64(updatedFile), sha, branch })
-});
-```
-
-### n8n Automation Workflow
-
-```
-RSS Feed Trigger (MIT Tech Review)  ─┐
-RSS Feed Trigger (TechCrunch EU)    ─┼─► Merge ─► Code Filter ─► Limit(1)
-RSS Feed Trigger (Ars Technica)     ─┘              │
-                                                    ▼
-                                           HTTP Request (Groq)
-                                                    │
-                                                    ▼
-                                            Edit Fields (JSON parse)
-                                                    │
-                                                    ▼
-                                           Discord (Send & Wait)
-                                                    │
-                                          ┌────────┴────────┐
-                                          ▼                 ▼
-                                      Approved           Rejected
-                                          │                 │
-                                          ▼                 ▼
-                                   HTTP Request          (stop)
-                                   (Publish API)
-```
-
-### Design System
-
-- **Brutalist aesthetic** with nuanced color palette
-- **Bento Grid layouts** for visual hierarchy
-- **Glassmorphism** cards with backdrop blur
-- **Scroll-triggered animations** via Framer Motion
-- **Fully responsive** (mobile-first approach)
-
----
-
-## 📁 Project Structure
+## Structure du Projet
 
 ```
 src/
 ├── app/
 │   ├── api/
-│   │   ├── articles/route.ts    # Article publishing API
-│   │   └── subscribe/route.ts   # Newsletter subscription
+│   │   ├── articles/route.ts    # API publication articles
+│   │   └── subscribe/route.ts   # API newsletter
 │   ├── articles/
-│   │   ├── page.tsx             # All articles listing
-│   │   └── [slug]/page.tsx      # Article detail
+│   │   ├── page.tsx             # Liste tous les articles
+│   │   └── [slug]/page.tsx      # Page article
 │   ├── press/page.tsx           # Press kit
-│   ├── legal/page.tsx           # Legal pages
 │   └── page.tsx                 # Homepage
 ├── components/
-│   ├── Hero.tsx                 # Landing hero section
-│   ├── ArticlesGrid.tsx         # Bento grid for articles
-│   ├── Navigation.tsx           # Header with mobile menu
-│   ├── Newsletter.tsx           # Email subscription form
-│   └── Footer.tsx               # Site footer
-├── lib/
-│   └── articles.ts              # Articles data store
-└── styles/
-    └── globals.css              # Design system & Tailwind
+│   ├── Hero.tsx                 # Section hero
+│   ├── ArticlesGrid.tsx         # Bento grid articles
+│   ├── Navigation.tsx           # Header + mobile menu
+│   ├── Newsletter.tsx           # Formulaire inscription
+│   └── Footer.tsx
+└── lib/
+    └── articles.ts              # Data store articles
 ```
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-
-### Installation
+## Installation
 
 ```bash
-# Clone the repository
+# Cloner le repo
 git clone https://github.com/cosmos510/blog-tech.git
 cd blog-tech
 
-# Install dependencies
+# Installer les dépendances
 npm install
 
-# Set up environment variables
+# Configurer les variables d'environnement
 cp .env.example .env.local
-# Edit .env.local with your API keys
 
-# Run development server
+# Lancer en développement
 npm run dev
+
+# Build production
+npm run build
 ```
 
-### Environment Variables
+## Variables d'environnement
 
 ```env
 # Newsletter (MailerLite)
-MAILERLITE_API_KEY=your_api_key
-MAILERLITE_GROUP_ID=your_group_id
+MAILERLITE_API_KEY=
+MAILERLITE_GROUP_ID=
 
-# Article Publishing API
-ARTICLES_API_KEY=your_secret_key
-GITHUB_TOKEN=your_github_pat
-GITHUB_REPO_OWNER=your_username
-GITHUB_REPO_NAME=blog-tech
-GITHUB_BRANCH=main
+# API Publication
+ARTICLES_API_KEY=
+GITHUB_TOKEN=
+GITHUB_REPO_OWNER=
+GITHUB_REPO_NAME=
+GITHUB_BRANCH=
 ```
 
----
+## Pages
 
-## 🤖 Automation Setup (n8n)
+### Contenu
+- `/` - Homepage avec bento grid
+- `/articles` - Liste tous les articles
+- `/articles/[slug]` - Article individuel
+- `/press` - Press kit et assets
 
-### Required Services
+### API
+- `POST /api/articles` - Publier un article
+- `POST /api/subscribe` - Inscription newsletter
 
-1. **n8n** (self-hosted via Docker or n8n Cloud)
-2. **Groq API** account (free tier available)
-3. **Discord Bot** with message permissions
+## Workflow n8n
 
-### Groq API Configuration
+```
+RSS MIT AI ────┐
+               │
+RSS TechCrunch ┼──► Merge ──► Filter ──► Limit ──► Groq ──► Discord ──► Publish
+               │
+RSS Ars Tech ──┘
+```
+
+### Configuration Groq
 
 ```json
 {
   "model": "openai/gpt-oss-120b",
-  "messages": [...],
   "max_tokens": 4000,
   "temperature": 0.3
 }
 ```
 
-### RSS Feeds Used
+## Design
 
-- MIT Technology Review (AI)
-- TechCrunch Europe
-- Ars Technica
+- Dark mode first
+- Brutalisme nuancé
+- Bento grid layouts
+- Glassmorphism cards
+- Animations scroll-triggered
+- Mobile-first responsive
 
----
+## Performance
 
-## 📈 Performance
+- Lighthouse 95+
+- Build ~3s (Turbopack)
+- Static generation
+- Edge caching Vercel
 
-- **Lighthouse Score:** 95+ (Performance, Accessibility, SEO)
-- **Build Time:** ~3 seconds (Turbopack)
-- **Static Generation:** Articles pre-rendered at build time
-- **Edge Caching:** Vercel CDN for global distribution
-
----
-
-## 🛠️ Tech Stack Summary
-
-| Category | Technology |
-|----------|------------|
-| Frontend | Next.js 16, React 19, TypeScript |
-| Styling | Tailwind CSS v4, CSS Custom Properties |
-| Animation | Framer Motion |
-| Deployment | Vercel (auto-deploy) |
-| Newsletter | MailerLite API |
-| Automation | n8n (self-hosted) |
-| AI/LLM | Groq API (GPT-OSS-120B) |
-| Version Control | GitHub |
-
----
-
-## 👤 Author
+## Auteur
 
 **Maxime Martin**  
-Senior Software Engineer  
+Senior Software Engineer
 
 - LinkedIn: [linkedin.com/in/maxime-martin-090731aa](https://www.linkedin.com/in/maxime-martin-090731aa)
 - Email: contact@europiatech.eu
 
----
+## License
 
-## 📄 License
-
-This project is for portfolio demonstration purposes.
-
----
-
-*Built with ☕ and a passion for European tech innovation.*
+Portfolio project - Maxime Martin © 2026
