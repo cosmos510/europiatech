@@ -122,7 +122,7 @@ function ArticleCard({
   isCompact = false,
   isWide = false,
 }: { 
-  article: typeof articles[0]; 
+  article: typeof allArticles[0] & { accentColor: string }; 
   isFeatured?: boolean;
   isCompact?: boolean;
   isWide?: boolean;
