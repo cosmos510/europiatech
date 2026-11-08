@@ -12,26 +12,7 @@ export interface Article {
   wide?: boolean;
 }
 
-export const articles: Article[
-  {
-    slug: 'test-article-1794147442046',
-    title: 'War.app : la conquête en ligne qui ne laisse personne attendre son tour',
-    excerpt: 'Article généré automatiquement',
-    tag: 'Deep Tech',
-    tagColor: 'violet',
-    date: 'November 8, 2026',
-    readTime: '5 min',
-    author: 'Maxime Martin',
-    content: `
-**War.app : la conquête en ligne qui ne laisse personne attendre son tour**  
-
-Depuis avril, la plate‑forme de stratégie qui était autrefois connue sous le nom de Warzone a été rebaptisée War.app, suite à un accord officiel avec Activision. Ce changement de nom marque une étape importante pour le développeur, qui souhaite désormais clarifier la marque et renforcer la présence du jeu sur le web. Malgré ce rebrand, le cœur du gameplay reste inchangé : une carte mondiale dynamique, des ordres qui se donnent simultanément à tous les joueurs, et l’absence de dés par défaut pour garder le contrôle entièrement entre les mains des tacticiens. La nouvelle identité de War.app n’est donc qu’un relooking de l’interface et un renforcement des relations commerciales, sans compromettre l’expérience de jeu.
-
-Le principe de base est à la fois simple et addictif : chaque participant reçoit une carte du monde où se découpent les différentes régions à conquérir. Au lieu d’attendre son tour, chaque joueur déploie ses troupes, ses offensives et ses défenses en même temps que les autres. Ce mode « tout à la fois » crée une tension permanente et exige une réflexion stratégique rapide. Le jeu ne comporte pas de dés, ce qui élimine le hasard et met l’accent sur la planification et l’adaptation en temps réel. Les joueurs doivent donc anticiper les mouvements adverses, gérer les ressources et choisir les meilleures alliances, le tout dans un environnement entièrement numérique et instantané.
-
-War.app reste entièrement gratuit, accessible directement depuis votre navigateur. Le modèle économique repose sur la publicité intégrée, ce qui permet de garder le prix à zéro tout en finançant le développement continu de nouvelles cartes, scénarios et mises à jour. Les membres de la communauté apprécient particulièrement la simplicité d’accès et la convivialité du jeu, qui ne requiert aucune installation lourde. Avec ce nouveau nom et un engagement clair envers la qualité, War.app poursuit son ambition de devenir la référence des jeux de conquête multijoueurs en ligne, offrant une expérience fluide, compétitive et toujours en évolution.
-    `,
-  },] = [
+export const articles: Article[] = [
   {
     slug: 'london-tech-week-2026-european-ai',
     title: 'Preview: London Tech Week 2026 — European AI & Sovereign Tech',

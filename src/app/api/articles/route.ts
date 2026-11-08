@@ -63,7 +63,7 @@ export async function POST(request: Request) {
     const githubToken = process.env.GITHUB_TOKEN;
     const repoOwner = process.env.GITHUB_REPO_OWNER || 'cosmos510';
     const repoName = process.env.GITHUB_REPO_NAME || 'blog-tech';
-    const branch = process.env.GITHUB_BRANCH || 'v2-nextjs';
+    const branch = process.env.GITHUB_BRANCH || 'main';
     const filePath = 'src/lib/articles.ts';
 
     if (!githubToken) {
