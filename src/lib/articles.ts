@@ -15,7 +15,7 @@ export interface Article {
 export const articles: Article[] = [
   {
     slug: 'war-app-jeu-conquete-qui-personne-attend-tour',
-    title: 'War.app : Le jeu de conquête où personne n'attend son tour',
+    title: 'War.app : Le jeu de conquête où personne n\'attend son tour',
     excerpt: 'War.app, anciennement Warzone, reste un jeu de stratégie en temps réel gratuit sur navigateur, où chaque joueur donne ses ordres simultanément, sans dés, après un partenariat avec Activision.',
     tag: 'Gaming',
     tagColor: 'violet',
