@@ -1,4 +1,11 @@
 import { NextResponse } from 'next/server';
+import { marked } from 'marked';
+
+// Configure marked for safe HTML output
+marked.setOptions({
+  gfm: true,
+  breaks: true,
+});
 
 interface NewArticle {
   slug: string;
@@ -45,6 +52,12 @@ export async function POST(request: Request) {
     });
 
     // Construire l'objet article complet
+    // Convertir le Markdown en HTML si nécessaire
+    let htmlContent = article.content;
+    if (article.content.includes('##') || article.content.includes('**') || article.content.includes('- ')) {
+      htmlContent = await marked.parse(article.content);
+    }
+
     const newArticle = {
       slug: article.slug,
       title: article.title,
@@ -56,7 +69,7 @@ export async function POST(request: Request) {
       author: article.author || 'Maxime Martin',
       featured: article.featured || false,
       wide: article.wide || false,
-      content: article.content,
+      content: htmlContent,
     };
 
     // GitHub API pour récupérer le fichier actuel
