@@ -36,8 +36,8 @@ export function Footer() {
 
           {/* Links */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }} className="footer-links">
-            <FooterLink href="#articles">Analysis</FooterLink>
-            <FooterLink href="#about">About</FooterLink>
+            <FooterLink href="/#articles">Analysis</FooterLink>
+            <FooterLink href="/#about">About</FooterLink>
             <FooterLink href="/press">Press</FooterLink>
             <FooterLink href="/legal">Legal</FooterLink>
             <FooterLink href="/rss.xml">RSS</FooterLink>
