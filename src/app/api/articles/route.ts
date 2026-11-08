@@ -96,11 +96,18 @@ export async function POST(request: Request) {
     const currentContent = Buffer.from(fileData.content, 'base64').toString('utf-8');
 
     // 2. Insérer le nouvel article dans le tableau
+    // Fonction pour nettoyer les strings (enlever retours à la ligne, échapper quotes)
+    const cleanString = (str: string) => str
+      .replace(/\r?\n/g, ' ')  // Remplacer retours à la ligne par espaces
+      .replace(/\s+/g, ' ')     // Normaliser les espaces multiples
+      .replace(/'/g, "\\'")     // Échapper les quotes simples
+      .trim();
+
     const newArticleString = `  {
-    slug: '${newArticle.slug}',
-    title: '${newArticle.title.replace(/'/g, "\\'")}',
-    excerpt: '${newArticle.excerpt.replace(/'/g, "\\'")}',
-    tag: '${newArticle.tag}',
+    slug: '${cleanString(newArticle.slug)}',
+    title: '${cleanString(newArticle.title)}',
+    excerpt: '${cleanString(newArticle.excerpt)}',
+    tag: '${cleanString(newArticle.tag)}',
     tagColor: '${newArticle.tagColor}',
     date: '${newArticle.date}',
     readTime: '${newArticle.readTime}',
