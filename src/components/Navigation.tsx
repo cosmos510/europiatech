@@ -45,7 +45,7 @@ export function Navigation() {
 
       {/* Desktop nav */}
       <div className="nav-desktop" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
-        <NavLink href="/#articles">Analysis</NavLink>
+        <NavLink href="/articles">Articles</NavLink>
         <NavLink href="/#about">About</NavLink>
         <NavLink href="/press">Press</NavLink>
         <Link href="/#newsletter" className="btn-brutal">
@@ -107,8 +107,8 @@ export function Navigation() {
             }}
           >
             <div style={{ display: 'flex', flexDirection: 'column', padding: '1.5rem', gap: '1rem' }}>
-              <MobileNavLink href="/#articles" onClick={() => setIsMobileMenuOpen(false)}>
-                Analysis
+              <MobileNavLink href="/articles" onClick={() => setIsMobileMenuOpen(false)}>
+                Articles
               </MobileNavLink>
               <MobileNavLink href="/#about" onClick={() => setIsMobileMenuOpen(false)}>
                 About

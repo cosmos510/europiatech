@@ -111,6 +111,22 @@ export function ArticlesGrid() {
             </motion.div>
           )}
         </div>
+
+        {/* View All Articles link */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          style={{ marginTop: '3rem', textAlign: 'center' }}
+        >
+          <Link href="/articles" className="btn-outline" style={{ display: 'inline-flex' }}>
+            View All Articles
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M6 4L10 8L6 12" />
+            </svg>
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

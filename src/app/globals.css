@@ -594,6 +594,10 @@ a {
     grid-column: span 1 !important;
     grid-row: span 1 !important;
   }
+  
+  .articles-list-grid {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
