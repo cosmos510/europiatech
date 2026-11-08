@@ -14,6 +14,84 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: 'humanoid-robot-cleaning-apartment-future',
+    title: 'I Watched a Humanoid Robot Clean My Apartment: A Taste of the Future',
+    excerpt: 'A frugal podcaster tried a new humanoid‑robot cleaning service in San Francisco and was surprised by the seamless blend of tech and domestic chores. The experience feels like a preview of how AI‑powered helpers could reshape everyday life.',
+    tag: 'AI',
+    tagColor: 'violet',
+    date: 'November 8, 2026',
+    readTime: '5 min',
+    author: 'Maxime Martin',
+    content: `
+# I Watched a Humanoid Robot Clean My Apartment: A Taste of the Future
+
+When I first saw the X post about a new humanoid‑robot cleaning service launching in San Francisco, my immediate reaction was skepticism. I’m the kind of person who clings to a Magic Eraser, a cheap podcast microphone, and a strong sense of frugality. Paying for a house cleaner felt like an unnecessary luxury. Yet curiosity got the better of me, and I signed up for a trial that promised a robot that could actually *walk* around my apartment, mop the floor, and even dust the shelves.
+
+---
+
+## The Arrival
+
+The robot arrived in a sleek, matte‑black box that looked more like a piece of modern art than a cleaning appliance. Inside was a compact, bipedal machine roughly the height of a small child, with articulated joints, a soft‑touch silicone exterior, and a small screen on its chest that displayed a friendly, animated face. The service’s branding called it **CleanBot‑X**, and the accompanying app let me schedule a cleaning window, set preferences (no‑touch zones, pet‑friendly mode), and watch a live feed of the robot’s progress.
+
+## First Impressions
+
+I opened the box, placed the robot on my living room rug, and pressed “Start.” Within seconds, CleanBot‑X stood up, performed a quick self‑diagnostic, and began scanning the room with lidar and depth cameras. Its sensors mapped the space, identified obstacles, and plotted an efficient cleaning path. I could see the map in real time on my phone – a grid of rooms, furniture outlines, and a bright line showing where the robot was heading.
+
+The first thing that struck me was the *quiet* operation. Unlike the whirring of a traditional vacuum, CleanBot‑X moved with a soft, almost inaudible hum. Its feet used a combination of rubberized soles and micro‑actuators that allowed it to glide over hardwood, carpet, and tile without leaving any marks. When it reached my kitchen, it extended a small, retractable arm equipped with a microfiber pad and a spray reservoir. The robot sprayed a fine mist of eco‑friendly cleaning solution, then gently swiped the countertop, leaving a streak‑free shine.
+
+## The Human‑Like Touch
+
+What truly set the experience apart was the robot’s *humanoid* behavior. When it encountered a pile of laundry, it paused, tilted its head slightly, and used its hands to pick up each item, placing them in a designated basket. When it brushed against my cat, it emitted a soft, soothing tone that seemed to calm the animal. The robot even responded to voice commands: I could say, “Clean the bathroom,” and it would acknowledge with a polite nod on its screen and head straight for the bathroom.
+
+The robot’s facial display added a layer of personality. When it finished a task, a small smile appeared, and a brief text bubble popped up: “All done! Anything else?” It felt less like a machine and more like a helpful companion.
+
+---
+
+## Performance Evaluation
+
+### Speed and Efficiency
+
+CleanBot‑X completed a full‑apartment clean in about 45 minutes, which is comparable to a professional human cleaner. The robot’s ability to switch between vacuuming, mopping, and light dusting without manual intervention saved me time and eliminated the need for multiple devices.
+
+### Quality of Clean
+
+The floors were spotless, the countertops gleamed, and even the hard‑to‑reach corners behind the couch were free of dust. The robot’s lidar mapping ensured it didn’t miss any area, and its adaptive pressure sensors prevented it from scratching delicate surfaces.
+
+### Energy Consumption
+
+The robot runs on a rechargeable lithium‑ion battery that lasts for a full cleaning cycle. After the job, it automatically returned to its charging dock, which was tucked neatly under my coffee table.
+
+### Cost Considerations
+
+The service charges $45 per hour, with a minimum of one hour per visit. While this is higher than a typical hourly rate for a human cleaner, the convenience factor—no need to schedule, no need to be home, and no risk of human error—adds value. For tech enthusiasts, the novelty alone may justify the price.
+
+---
+
+## The Bigger Picture
+
+Watching a humanoid robot handle mundane chores feels like a glimpse into a future where AI‑powered assistants become an extension of our daily lives. The technology behind CleanBot‑X combines advances in computer vision, natural language processing, and robotics that were once confined to research labs.
+
+### Societal Impact
+
+If such services become mainstream, we could see a shift in how households allocate time and labor. People may spend less time on repetitive cleaning tasks and more on creative or leisure activities. However, the rise of robot cleaners also raises questions about job displacement for traditional cleaning staff and the environmental footprint of manufacturing and powering these devices.
+
+### Ethical Considerations
+
+The robot’s data collection—room layouts, personal habits, voice commands—must be handled responsibly. Transparency about how the data is stored, used, and protected will be crucial to building trust.
+
+---
+
+## Final Thoughts
+
+My experience with CleanBot‑X was more than a novelty; it was a proof‑of‑concept that sophisticated, humanoid robots can integrate seamlessly into a domestic environment. The robot’s quiet efficiency, gentle handling of objects, and personable interface turned a routine cleaning session into a futuristic showcase.
+
+I’m still a frugal person, and I may not adopt a robot cleaner for every apartment, but the trial convinced me that the technology is ready for real‑world use. As the cost of hardware continues to drop and AI algorithms become more refined, we can expect to see more homes sharing space with helpful, human‑like machines.
+
+**Bottom line:** The future of home maintenance is already here, and it walks on two legs, smiles on a screen, and leaves your floors sparkling.
+
+    `,
+  },
+  {
     slug: 'war-app-jeu-conquete-qui-personne-attend-tour',
     title: 'War.app : Le jeu de conquête où personne n\'attend son tour',
     excerpt: 'War.app, anciennement Warzone, reste un jeu de stratégie en temps réel gratuit sur navigateur, où chaque joueur donne ses ordres simultanément, sans dés, après un partenariat avec Activision.',
