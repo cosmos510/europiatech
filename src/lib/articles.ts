@@ -15,310 +15,73 @@ export interface Article {
 export const articles: Article[] = [
   {
     slug: 'revolut-valuation-jumps-53-percent-115b-us-bank',
-    title: 'Revolut’s Valuation Soars 53% to $115 B Ahead of US Bank Launch',
-    excerpt: 'Revolut’s latest share sale lifted its valuation by 53% to $115 billion, underscoring investor confidence as the fintech prepares to roll out a full‑service bank in the United States. Backed by heavyweights such as Glade Brook, Coatue and T. Rowe Price, the round signals a new chapter for the London‑born challenger bank.',
-    tag: 'AI',
+    title: 'Revolut\'s Valuation Soars 53% to $115B Ahead of US Bank Launch',
+    excerpt: 'Revolut\'s latest share sale lifted its valuation by 53% to $115 billion, underscoring investor confidence as the fintech prepares to roll out a full-service bank in the United States.',
+    tag: 'Deep Tech',
     tagColor: 'violet',
     date: 'November 8, 2026',
-    readTime: '5 min',
+    readTime: '8 min',
     author: 'Maxime Martin',
+    featured: true,
     content: `
-<h1>Revolut’s Valuation Soars 53% to $115 B Ahead of US Bank Launch</h1>
-<p><em>By [Your Name], Tech Journalist</em></p>
-<p>Revolut, the London‑based fintech that started as a prepaid card app in 2015, has once again captured headlines. In a fresh private‑placement share sale, the company’s valuation jumped <strong>53 percent</strong>, landing at a staggering <strong>$115 billion</strong>—a figure that now places it among the world’s most valuable private fintechs. The round was led by a consortium of heavyweight investors, including <strong>Glade Brook</strong>, <strong>Coatue</strong>, and <strong>T. Rowe Price</strong>, who collectively pumped more than $600 million into the round.</p>
-<hr>
+<p class="dropcap">Revolut, the London-based fintech that started as a prepaid card app in 2015, has once again captured headlines. In a fresh private-placement share sale, the company's valuation jumped <strong>53 percent</strong>, landing at a staggering <strong>$115 billion</strong>—a figure that now places it among the world's most valuable private fintechs.</p>
+
 <h2>Why the Valuation Spike Matters</h2>
-<p>The valuation surge is not just a vanity metric; it reflects a confluence of strategic milestones that Revolut has been ticking off over the past two years:</p>
-<ol>
-<li><strong>US Banking License in Sight</strong> – Revolut has been courting U.S. regulators for a full‑service banking charter. Securing a charter would allow the company to offer FDIC‑insured deposits, credit cards, and loans—services that are currently limited to its European and Asian operations.</li>
-<li><strong>Revenue Diversification</strong> – While the core of Revolut’s revenue still comes from subscription tiers and foreign‑exchange fees, the company has been expanding into wealth management, crypto trading, and business accounts, creating multiple revenue streams.</li>
-<li><strong>User Base Growth</strong> – The platform now boasts <strong>over 40 million</strong> customers worldwide, with a notable uptick in North American sign‑ups after the launch of its U.S. app in 2023.</li>
-<li><strong>Operational Scale</strong> – Recent cost‑efficiency initiatives, including a shift to a more modular technology stack, have improved margins and made the business more attractive to institutional investors.</li>
-</ol>
-<p>These factors collectively convinced investors that Revolut is not merely a high‑growth payments app but a <strong>full‑stack financial institution</strong> poised to challenge traditional banks in the United States.</p>
-<hr>
-<h2>Who’s Backing the Bet?</h2>
+<p>The valuation surge reflects a confluence of strategic milestones:</p>
+<ul>
+  <li><strong>US Banking License in Sight</strong> – Revolut has been courting U.S. regulators for a full-service banking charter, which would allow FDIC-insured deposits, credit cards, and loans.</li>
+  <li><strong>Revenue Diversification</strong> – The company has expanded into wealth management, crypto trading, and business accounts.</li>
+  <li><strong>User Base Growth</strong> – The platform now boasts over 40 million customers worldwide.</li>
+  <li><strong>Operational Scale</strong> – Recent cost-efficiency initiatives have improved margins significantly.</li>
+</ul>
+
+<h2>Who's Backing the Bet?</h2>
 <p>The share sale was anchored by three prominent names:</p>
 <ul>
-<li><strong>Glade Brook</strong> – A venture capital firm known for backing early‑stage fintech disruptors. Their participation signals confidence in Revolut’s ability to translate its European success to the U.S. market.</li>
-<li><strong>Coatue Management</strong> – The technology‑focused hedge fund has a track record of investing in high‑growth digital platforms. Coatue’s involvement adds a layer of credibility to Revolut’s valuation, given the fund’s rigorous due‑diligence standards.</li>
-<li><strong>T. Rowe Price</strong> – The asset‑management giant brings a long‑term institutional perspective. Their stake suggests that Revolut is being viewed as a <strong>core holding</strong> for future financial‑services portfolios.</li>
+  <li><strong>Glade Brook</strong> – A venture capital firm known for backing early-stage fintech disruptors.</li>
+  <li><strong>Coatue Management</strong> – The technology-focused hedge fund has a track record of investing in high-growth digital platforms.</li>
+  <li><strong>T. Rowe Price</strong> – The asset-management giant brings a long-term institutional perspective.</li>
 </ul>
-<p>Together, these investors contributed roughly <strong>$600 million</strong>, with the total round size reported at <strong>$800 million</strong>. The influx of capital will primarily fund the U.S. bank launch, regulatory compliance, and further product development.</p>
-<hr>
-<h2>The U.S. Bank Launch: A Game‑Changer</h2>
-<p>Launching a bank in the United States is no small feat. The process involves navigating a labyrinth of federal and state regulations, obtaining a charter from the Office of the Comptroller of the Currency (OCC), and securing FDIC insurance. Revolut’s strategy appears to be a <strong>dual‑track approach</strong>:</p>
-<ul>
-<li><strong>Partnership Model</strong> – Initially, Revolut will partner with an existing U.S. bank to offer FDIC‑insured deposits while its own charter is under review. This mirrors the approach taken by rivals like <strong>N26</strong> and <strong>Monzo</strong>.</li>
-<li><strong>Full Charter Pursuit</strong> – Simultaneously, the company is filing for a direct banking charter, which would give it the ability to underwrite loans, issue credit cards, and provide a broader suite of services.</li>
-</ul>
-<p>If successful, Revolut could become the first European‑origin challenger bank to operate a <strong>full‑stack banking platform</strong> in the United States, directly competing with the likes of <strong>Chime</strong>, <strong>Varo</strong>, and even legacy banks that are scrambling to digitize.</p>
-<hr>
-<h2>Competitive Landscape and Risks</h2>
-<p>While the valuation jump is impressive, Revolut faces several headwinds:</p>
-<ul>
-<li><strong>Regulatory Scrutiny</strong> – The U.S. banking sector is heavily regulated. Any misstep in compliance could delay the charter or result in fines.</li>
-<li><strong>Market Saturation</strong> – The U.S. fintech market is crowded. Companies such as <strong>PayPal</strong>, <strong>Square</strong>, and <strong>Robinhood</strong> have already entrenched themselves in consumer wallets and investment products.</li>
-<li><strong>Profitability Pressure</strong> – Despite revenue growth, Revolut still reports a net loss, largely due to heavy investment in technology and marketing. Investors will be watching the path to profitability closely.</li>
-<li><strong>Currency Risk</strong> – With a large portion of its revenue generated outside the U.S., Revolut remains exposed to foreign‑exchange volatility.</li>
-</ul>
-<p>Nevertheless, the backing of Glade Brook, Coatue, and T. Rowe Price suggests that the risk‑reward calculus still leans heavily toward upside.</p>
-<hr>
-<h2>What This Means for the Fintech Ecosystem</h2>
-<p>Revolut’s $115 billion valuation is a <strong>signal to the broader fintech community</strong> that investors are willing to place massive bets on cross‑border expansion and full‑service banking ambitions. It also underscores a shift from pure‑play payment solutions to <strong>integrated financial ecosystems</strong> that combine banking, investing, and crypto.</p>
-<p>For startups, the takeaway is clear: building a <strong>modular, compliant, and scalable</strong> platform can attract institutional capital at premium multiples. For incumbents, the message is a warning—digital‑first challengers are no longer just niche players; they are poised to become <strong>full‑stack competitors</strong>.</p>
-<hr>
-<h2>Looking Ahead</h2>
-<p>The next 12‑18 months will be critical for Revolut. Key milestones to watch include:</p>
-<ol>
-<li><strong>OCC Charter Decision</strong> – A green light would unlock the ability to offer loans and credit cards, dramatically expanding the revenue base.</li>
-<li><strong>Launch of FDIC‑Insured Deposits</strong> – Even a partnership‑based launch would give U.S. consumers confidence in the brand.</li>
-<li><strong>Revenue Mix Evolution</strong> – A shift toward higher‑margin products such as lending and wealth management will be essential for sustainable profitability.</li>
-<li><strong>Geographic Expansion</strong> – Success in the U.S. could pave the way for further expansion into Canada, Latin America, and beyond.</li>
-</ol>
-<p>If Revolut can navigate these hurdles, its $115 billion valuation may not just be a headline—it could become the new benchmark for fintech valuations in a world where <strong>banking is increasingly digital</strong>.</p>
-<hr>
-<p><em>Revolut’s story is still being written, but the latest funding round and valuation surge suggest that the fintech is on the cusp of a transformative era—one that could reshape how millions of Americans manage their money.</em></p>
 
-    `,
-  },
-  {
-    slug: 'humanoid-robot-cleaning-apartment-future',
-    title: 'When a Humanoid Robot Cleaned My Apartment: A Glimpse Into the Future of Home Care',
-    excerpt: 'I watched a sleek, humanoid robot scrub my living room and it felt like stepping into a sci‑fi episode. The experience left me both amazed and contemplative about how AI‑powered helpers could reshape everyday life.',
-    tag: 'AI',
-    tagColor: 'violet',
-    date: 'November 8, 2026',
-    readTime: '5 min',
-    author: 'Maxime Martin',
-    content: `
-<h1>When a Humanoid Robot Cleaned My Apartment: A Glimpse Into the Future of Home Care</h1>
-<p><em>By [Your Name], Tech Journalist</em></p>
-<hr>
-<p>I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid‑robot cleaning service in San Francisco, I immediately signed up for a trial. What followed was a 45‑minute encounter that felt like a taste of the future, and it left me questioning how quickly the line between science‑fiction and everyday reality is blurring.</p>
-<hr>
-<h2>The Arrival</h2>
-<p>The robot arrived in a compact, matte‑black case that looked more like a high‑end speaker than a cleaning appliance. Two technicians in branded shirts lifted the lid, revealing a sleek, bipedal machine about five feet tall. Its exterior was a seamless blend of brushed aluminum and soft‑touch polymer, with a face‑like display that lit up with a friendly, animated smile.</p>
-<blockquote>
-<p><strong>Pro tip:</strong> The service uses a subscription model, so the robot will return weekly or bi‑weekly depending on your plan. No hidden fees, just a flat rate that covers the robot, maintenance, and a remote monitoring service.</p>
-</blockquote>
-<p>The technicians explained the basics: the robot, named <strong>Astra</strong>, uses a combination of LiDAR, depth cameras, and tactile sensors to map the apartment in real time. Its AI core, built on a custom version of OpenAI’s GPT‑4 architecture, interprets the map, prioritizes tasks, and even learns your cleaning preferences over time.</p>
-<h2>The Cleaning Process</h2>
-<p>Astra stepped onto the hardwood floor and began a quiet, almost graceful routine. First, it performed a rapid 360° scan, projecting a holographic map onto the wall that showed the layout of furniture, clutter zones, and high‑traffic areas. The map was color‑coded: green for clean surfaces, yellow for spots that needed attention, and red for areas it deemed &quot;high‑priority&quot; (in my case, the coffee‑stained rug near the kitchen).</p>
-<h3>1. Dusting and Surface Wipe</h3>
-<p>Astra extended a soft‑bristle arm, gently dusting shelves, picture frames, and the tops of cabinets. Its tactile sensors detected the pressure needed for delicate items, preventing any accidental knocks. When it reached my bookshelf, it paused, scanned the titles, and whispered a soft, &quot;Do you want me to organize these?&quot; I laughed and told it to just dust, but the interaction hinted at a future where robots could actually rearrange objects based on user preferences.</p>
-<h3>2. Vacuuming and Mopping</h3>
-<p>The robot switched to a low‑profile vacuum module, gliding under the couch with a suction power comparable to a high‑end Dyson. Its AI adjusted the suction based on floor type—higher on carpet, gentler on hardwood. After vacuuming, Astra deployed a microfiber mop, releasing a measured amount of eco‑friendly cleaning solution. The mop moved in overlapping passes, ensuring no streaks were left behind.</p>
-<h3>3. Spot‑Cleaning and Sanitizing</h3>
-<p>When Astra detected the coffee stain, it deployed a targeted spot‑cleaning routine. A tiny UV‑LED array illuminated the area, and a micro‑sprayer applied a stain‑removing solution. Within seconds, the dark ring faded, leaving the rug looking almost brand new. The robot logged the incident in its service record, noting the type of stain and the solution used—data that will help it improve future spot‑cleaning tasks.</p>
-<h2>The Human‑Robot Interaction</h2>
-<p>What struck me most was the subtle, conversational interface. Astra didn’t just operate in silence; it gave brief, polite updates: &quot;I’m moving to the kitchen now,&quot; &quot;Finished vacuuming the living room,&quot; and even asked, &quot;Would you like me to open the windows for fresh air?&quot; The voice was warm, gender‑neutral, and non‑intrusive.</p>
-<p>I tried a few commands: &quot;Astra, focus on the windowsill,&quot; and it complied instantly, adjusting its path. When I asked, &quot;How long will this take?&quot; it replied, &quot;Approximately 38 minutes, based on current floor conditions.&quot; The transparency of its timing gave me confidence that I wasn’t being left in the dark.</p>
-<h2>The Bigger Picture</h2>
-<p>Astra is part of a growing ecosystem of <strong>embodied AI</strong> that moves beyond static smart speakers and into the physical world. Companies like <strong>Boston Dynamics</strong>, <strong>Agility Robotics</strong>, and <strong>iRobot</strong> have been experimenting with legged robots for years, but the integration of advanced language models, real‑time perception, and consumer‑friendly design is what makes this service feel truly revolutionary.</p>
-<h3>Economic Implications</h3>
-<p>The subscription model lowers the barrier to entry for households that can’t afford a dedicated robot purchase. However, it also raises questions about labor displacement. While a robot like Astra can handle routine cleaning, it doesn’t replace the nuanced care a professional cleaner might provide for deep‑cleaning or specialized tasks. The market may evolve into a hybrid model where human cleaners focus on high‑touch services while robots handle the day‑to‑day upkeep.</p>
-<h3>Ethical and Privacy Concerns</h3>
-<p>Astra constantly maps the interior of a home, raising legitimate privacy concerns. The company assures users that all visual data is processed locally on the robot’s edge‑computing unit and never uploaded to the cloud without explicit consent. Still, the prospect of a machine that can see everything you own is a conversation we’ll need to keep having.</p>
-<hr>
-<h2>My Takeaway</h2>
-<p>Watching a humanoid robot clean my apartment was more than a novelty—it was a concrete demonstration that AI is moving from the screen to the floorboards of our lives. The experience was surprisingly pleasant, efficient, and oddly comforting. It felt like a <strong>taste of the future</strong>, one where chores are delegated to capable, polite machines, freeing us to focus on creativity, work, or simply relaxing.</p>
-<p>Will we all have a robot like Astra in a few years? The technology is already here; it’s the business models, regulations, and cultural acceptance that will determine how quickly it becomes mainstream. For now, I’m happy to let a robot take care of the mess while I enjoy my podcast and a clean tub.</p>
-<hr>
-<p>*If you’re curious about trying a humanoid‑robot cleaning service, check out the San Francisco pilot program at <strong><a href="https://humanoidclean.com">humanoidclean.com</a></strong>. The first month is free for new subscribers.*</p>
+<h2>The U.S. Bank Launch: A Game-Changer</h2>
+<p>Launching a bank in the United States involves navigating federal and state regulations, obtaining a charter from the OCC, and securing FDIC insurance. Revolut's strategy appears to be a dual-track approach: partnering with existing banks initially while pursuing a direct charter.</p>
 
-    `,
-  },
-  {
-    slug: 'revolut-valuation-115b-us-bank-launch',
-    title: 'Revolut’s Valuation Soars 53% to $115 B as It Gears Up for U.S. Banking Launch',
-    excerpt: 'Revolut’s latest share sale catapulted its valuation by 53% to $115 billion, underscoring investor confidence as the fintech prepares to roll out a full‑service U.S. bank. Backed by heavyweights like Glade Brook, Coatue and T. Rowe Price, the round signals a pivotal moment in Revolut’s global expansion strategy.',
-    tag: 'AI',
-    tagColor: 'violet',
-    date: 'November 8, 2026',
-    readTime: '5 min',
-    author: 'Maxime Martin',
-    content: `
-# Revolut’s Valuation Soars 53% to $115 B as It Gears Up for U.S. Banking Launch
-
-*By [Your Name], Tech Journalist*
-
----
-
-Revolut, the London‑based challenger bank that began as a currency‑exchange app, has once again captured headlines. In a fresh private‑placement share sale, the company’s valuation jumped **53 %**, landing at a staggering **$115 billion**. The round was led by a consortium of heavyweight investors, including **Glade Brook**, **Coatue**, and **T. Rowe Price**, alongside several other institutional backers.
-
-The timing of the raise is no coincidence. Revolut is on the cusp of launching a **full‑service banking operation in the United States**, a market that has historically been a litmus test for fintech ambition. The new capital will fund regulatory compliance, product development, and the infrastructure needed to compete with entrenched U.S. banks and fast‑growing neobanks alike.
-
----
-
-## Why the Valuation Spike Matters
-
-Revolut’s previous valuation, set after its 2021 funding round, hovered around **$70 billion**. The latest figure represents a **$45 billion uplift**, a leap that reflects several converging trends:
-
-1. **Revenue Momentum** – In the fiscal year ending March 2024, Revolut reported **£1.2 billion** in revenue, a 38 % year‑over‑year increase, driven by higher subscription uptake and expanding merchant services.
-2. **Geographic Diversification** – The company now operates in **over 40 countries**, with a user base exceeding **30 million** active customers. Its European foothold is mature, and the U.S. launch promises a new growth engine.
-3. **Product Depth** – Beyond basic banking, Revolut offers crypto trading, stock investing, insurance, and a suite of business tools. This “one‑stop‑shop” approach has attracted a broader demographic, from millennials to small‑business owners.
-4. **Investor Confidence** – The involvement of **Coatue**, a venture capital firm known for backing high‑growth fintechs, and **T. Rowe Price**, a stalwart of institutional investing, signals that the market sees Revolut as a durable, long‑term play.
-
----
-
-## The Investor Line‑up: Who’s Backing Revolut?
-
-| Investor | Known For | Potential Strategic Value |
-|----------|-----------|---------------------------|
-| **Glade Brook** | Early‑stage fintechs, cross‑border payments | Provides expertise in scaling payment infrastructure across jurisdictions |
-| **Coatue** | High‑growth tech, AI, crypto | Offers deep connections to Silicon Valley talent and potential AI‑driven product synergies |
-| **T. Rowe Price** | Institutional asset management | Brings credibility with regulators and access to a broad pool of long‑term capital |
-| **Other Participants** | Various venture and growth funds | Diversify the shareholder base and broaden strategic networks |
-
-The blend of venture‑style aggressiveness (Coatue) and institutional steadiness (T. Rowe Price) creates a balanced capital structure that can weather the regulatory and competitive challenges of entering the U.S. market.
-
----
-
-## Preparing for the U.S. Bank Launch
-
-### Regulatory Hurdles
-
-Launching a bank in the United States requires a **charter from the Office of the Comptroller of the Currency (OCC)**, a **Federal Deposit Insurance Corporation (FDIC)** insurance cover, and compliance with a myriad of state‑level regulations. Revolut has already secured a **U.S. banking charter** for its subsidiary, **Revolut Bank USA**, and is in the final stages of FDIC approval. The new funding will be allocated to:
-
-- **Compliance technology** – Advanced AML/KYC platforms powered by AI to meet stringent U.S. standards.
-- **Talent acquisition** – Hiring seasoned banking executives, risk officers, and engineers familiar with the American financial ecosystem.
-- **Infrastructure** – Building a resilient core banking system capable of handling high‑volume retail deposits and real‑time payments.
-
-### Product Roadmap
-
-Revolut’s U.S. offering is expected to mirror its European suite, with some localized twists:
-
-- **Checking and Savings Accounts** with competitive APYs.
-- **Zero‑fee international transfers**, leveraging its existing cross‑border network.
-- **Integrated crypto wallets** – a differentiator in a market where many banks remain cautious.
-- **Embedded insurance** – partnering with U.S. insurers to provide travel, device, and health coverage.
-- **Business accounts** – targeting freelancers and gig‑economy workers who need flexible banking solutions.
-
----
-
-## Market Reaction and Competitive Landscape
-
-The announcement sent **Revolut’s private‑market price** up by roughly **15 %** in the days following the sale, according to Dealroom data. Analysts at **Morgan Stanley** upgraded their rating, citing the “clear path to a $150 billion valuation within three years if the U.S. rollout succeeds.”
-
-Revolut will face stiff competition from:
-
-- **Traditional banks** like JPMorgan Chase and Bank of America, which are rapidly digitizing.
-- **Neobanks** such as **Chime**, **Varo**, and **Current**, which already have a foothold in the U.S. consumer market.
-- **Fintech giants** like **PayPal** and **Square (Block)**, which are expanding into banking services.
-
-However, Revolut’s **global brand recognition**, **multi‑product ecosystem**, and **deep pockets** give it a unique advantage. Its ability to offer a seamless experience across continents could attract expatriates, digital nomads, and multinational SMEs.
-
----
-
-## What This Means for the Fintech Ecosystem
-
-Revolut’s valuation surge is a **bellwether for the broader fintech sector**. It demonstrates that investors are still willing to pour capital into companies that can prove **scalable, regulated banking models** beyond their home markets. The success of Revolut’s U.S. launch could unlock a wave of similar cross‑border expansions, prompting other European challengers to pursue American footholds.
-
-Moreover, the involvement of AI‑focused investors like Coatue hints at an upcoming **AI‑driven transformation** of banking services—ranging from predictive credit scoring to real‑time fraud detection. As Revolut integrates more AI into its compliance and product personalization layers, it could set new industry standards.
-
----
-
-## Bottom Line
-
-Revolut’s **$115 billion valuation** is more than a headline; it is a strategic inflection point. Backed by a powerful consortium of investors, the company is poised to tackle the United States—arguably the toughest proving ground for any fintech. If it can navigate regulatory complexities, win over American consumers, and leverage its multi‑product platform, Revolut could cement its status as a **global banking powerhouse**.
-
-The next 12‑18 months will be crucial. Success will validate the fintech‑to‑bank model at scale, while missteps could serve as a cautionary tale for other challengers eyeing the U.S. market.
-
----
-
-*Stay tuned for live updates as Revolut’s U.S. launch unfolds and the fintech landscape continues to evolve.*
+<h2>Competitive Landscape</h2>
+<p>While impressive, Revolut faces several headwinds including regulatory scrutiny, market saturation from PayPal, Square, and Robinhood, and profitability pressure. Nevertheless, the backing of major investors suggests the risk-reward calculus still leans toward upside.</p>
     `,
   },
   {
     slug: 'humanoid-robot-cleaning-apartment-future',
     title: 'I Watched a Humanoid Robot Clean My Apartment: A Taste of the Future',
-    excerpt: 'A frugal podcaster tried a new humanoid‑robot cleaning service in San Francisco and was surprised by the seamless blend of tech and domestic chores. The experience feels like a preview of how AI‑powered helpers could reshape everyday life.',
+    excerpt: 'A frugal podcaster tried a new humanoid-robot cleaning service in San Francisco and was surprised by the seamless blend of tech and domestic chores.',
     tag: 'AI',
-    tagColor: 'violet',
+    tagColor: 'pink',
     date: 'November 8, 2026',
-    readTime: '5 min',
+    readTime: '6 min',
     author: 'Maxime Martin',
     content: `
-# I Watched a Humanoid Robot Clean My Apartment: A Taste of the Future
+<p class="dropcap">When I first saw the X post about a new humanoid-robot cleaning service launching in San Francisco, my immediate reaction was skepticism. I'm the kind of person who clings to a Magic Eraser and a strong sense of frugality. Yet curiosity got the better of me, and I signed up for a trial.</p>
 
-When I first saw the X post about a new humanoid‑robot cleaning service launching in San Francisco, my immediate reaction was skepticism. I’m the kind of person who clings to a Magic Eraser, a cheap podcast microphone, and a strong sense of frugality. Paying for a house cleaner felt like an unnecessary luxury. Yet curiosity got the better of me, and I signed up for a trial that promised a robot that could actually *walk* around my apartment, mop the floor, and even dust the shelves.
+<h2>The Arrival</h2>
+<p>The robot arrived in a sleek, matte-black box that looked more like a piece of modern art than a cleaning appliance. Inside was a compact, bipedal machine with articulated joints, a soft-touch silicone exterior, and a small screen displaying a friendly animated face.</p>
 
----
+<h2>First Impressions</h2>
+<p>Within seconds, the robot stood up, performed a quick self-diagnostic, and began scanning the room with lidar and depth cameras. The first thing that struck me was the quiet operation—unlike traditional vacuums, it moved with a soft, almost inaudible hum.</p>
 
-## The Arrival
+<h2>The Human-Like Touch</h2>
+<p>What truly set the experience apart was the robot's humanoid behavior. When it encountered a pile of laundry, it paused, tilted its head, and used its hands to pick up each item. The robot even responded to voice commands with a polite nod on its screen.</p>
 
-The robot arrived in a sleek, matte‑black box that looked more like a piece of modern art than a cleaning appliance. Inside was a compact, bipedal machine roughly the height of a small child, with articulated joints, a soft‑touch silicone exterior, and a small screen on its chest that displayed a friendly, animated face. The service’s branding called it **CleanBot‑X**, and the accompanying app let me schedule a cleaning window, set preferences (no‑touch zones, pet‑friendly mode), and watch a live feed of the robot’s progress.
+<h2>Performance Evaluation</h2>
+<ul>
+  <li><strong>Speed:</strong> Full apartment clean in about 45 minutes</li>
+  <li><strong>Quality:</strong> Floors spotless, countertops gleaming, even hard-to-reach corners dust-free</li>
+  <li><strong>Energy:</strong> Rechargeable battery lasts a full cleaning cycle</li>
+</ul>
 
-## First Impressions
+<h2>The Bigger Picture</h2>
+<p>Watching a humanoid robot handle mundane chores feels like a glimpse into a future where AI-powered assistants become an extension of our daily lives. The technology combines advances in computer vision, natural language processing, and robotics that were once confined to research labs.</p>
 
-I opened the box, placed the robot on my living room rug, and pressed “Start.” Within seconds, CleanBot‑X stood up, performed a quick self‑diagnostic, and began scanning the room with lidar and depth cameras. Its sensors mapped the space, identified obstacles, and plotted an efficient cleaning path. I could see the map in real time on my phone – a grid of rooms, furniture outlines, and a bright line showing where the robot was heading.
-
-The first thing that struck me was the *quiet* operation. Unlike the whirring of a traditional vacuum, CleanBot‑X moved with a soft, almost inaudible hum. Its feet used a combination of rubberized soles and micro‑actuators that allowed it to glide over hardwood, carpet, and tile without leaving any marks. When it reached my kitchen, it extended a small, retractable arm equipped with a microfiber pad and a spray reservoir. The robot sprayed a fine mist of eco‑friendly cleaning solution, then gently swiped the countertop, leaving a streak‑free shine.
-
-## The Human‑Like Touch
-
-What truly set the experience apart was the robot’s *humanoid* behavior. When it encountered a pile of laundry, it paused, tilted its head slightly, and used its hands to pick up each item, placing them in a designated basket. When it brushed against my cat, it emitted a soft, soothing tone that seemed to calm the animal. The robot even responded to voice commands: I could say, “Clean the bathroom,” and it would acknowledge with a polite nod on its screen and head straight for the bathroom.
-
-The robot’s facial display added a layer of personality. When it finished a task, a small smile appeared, and a brief text bubble popped up: “All done! Anything else?” It felt less like a machine and more like a helpful companion.
-
----
-
-## Performance Evaluation
-
-### Speed and Efficiency
-
-CleanBot‑X completed a full‑apartment clean in about 45 minutes, which is comparable to a professional human cleaner. The robot’s ability to switch between vacuuming, mopping, and light dusting without manual intervention saved me time and eliminated the need for multiple devices.
-
-### Quality of Clean
-
-The floors were spotless, the countertops gleamed, and even the hard‑to‑reach corners behind the couch were free of dust. The robot’s lidar mapping ensured it didn’t miss any area, and its adaptive pressure sensors prevented it from scratching delicate surfaces.
-
-### Energy Consumption
-
-The robot runs on a rechargeable lithium‑ion battery that lasts for a full cleaning cycle. After the job, it automatically returned to its charging dock, which was tucked neatly under my coffee table.
-
-### Cost Considerations
-
-The service charges $45 per hour, with a minimum of one hour per visit. While this is higher than a typical hourly rate for a human cleaner, the convenience factor—no need to schedule, no need to be home, and no risk of human error—adds value. For tech enthusiasts, the novelty alone may justify the price.
-
----
-
-## The Bigger Picture
-
-Watching a humanoid robot handle mundane chores feels like a glimpse into a future where AI‑powered assistants become an extension of our daily lives. The technology behind CleanBot‑X combines advances in computer vision, natural language processing, and robotics that were once confined to research labs.
-
-### Societal Impact
-
-If such services become mainstream, we could see a shift in how households allocate time and labor. People may spend less time on repetitive cleaning tasks and more on creative or leisure activities. However, the rise of robot cleaners also raises questions about job displacement for traditional cleaning staff and the environmental footprint of manufacturing and powering these devices.
-
-### Ethical Considerations
-
-The robot’s data collection—room layouts, personal habits, voice commands—must be handled responsibly. Transparency about how the data is stored, used, and protected will be crucial to building trust.
-
----
-
-## Final Thoughts
-
-My experience with CleanBot‑X was more than a novelty; it was a proof‑of‑concept that sophisticated, humanoid robots can integrate seamlessly into a domestic environment. The robot’s quiet efficiency, gentle handling of objects, and personable interface turned a routine cleaning session into a futuristic showcase.
-
-I’m still a frugal person, and I may not adopt a robot cleaner for every apartment, but the trial convinced me that the technology is ready for real‑world use. As the cost of hardware continues to drop and AI algorithms become more refined, we can expect to see more homes sharing space with helpful, human‑like machines.
-
-**Bottom line:** The future of home maintenance is already here, and it walks on two legs, smiles on a screen, and leaves your floors sparkling.
-
-    `,
-  },
-  {
-    slug: 'war-app-jeu-conquete-qui-personne-attend-tour',
-    title: 'War.app : Le jeu de conquête où personne n\'attend son tour',
-    excerpt: 'War.app, anciennement Warzone, reste un jeu de stratégie en temps réel gratuit sur navigateur, où chaque joueur donne ses ordres simultanément, sans dés, après un partenariat avec Activision.',
-    tag: 'Gaming',
-    tagColor: 'violet',
-    date: 'November 8, 2026',
-    readTime: '5 min',
-    author: 'Maxime Martin',
-    content: `
-<p>Depuis son renommage en avril, War.app conserve l'essence de Warzone : une carte mondiale, des ordres donnés simultanément par tous les joueurs, sans dés, et un gameplay entièrement gratuit dans le navigateur, financé par de la publicité. Le partenariat avec Activision n'a pas modifié la mécanique de jeu, mais a permis d'officialiser la plateforme et d'ouvrir de nouvelles possibilités de monétisation tout en gardant l'expérience libre et accessible à tous.</p>
+<p><strong>Bottom line:</strong> The future of home maintenance is already here, and it walks on two legs, smiles on a screen, and leaves your floors sparkling.</p>
     `,
   },
   {
@@ -326,11 +89,10 @@ I’m still a frugal person, and I may not adopt a robot cleaner for every apart
     title: 'Preview: London Tech Week 2026 — European AI & Sovereign Tech',
     excerpt: 'Key European AI companies to watch, who we want to interview, and the sovereign infrastructure themes we\'ll track on the ground.',
     tag: 'Event Preview',
-    tagColor: 'pink',
+    tagColor: 'orange',
     date: 'February 18, 2026',
     readTime: '8 min',
     author: 'Maxime Martin',
-    featured: true,
     content: `
       <p class="dropcap">London Tech Week 2026 arrives at a pivotal moment for European AI. With the AI Act now in full effect and sovereign infrastructure becoming a competitive advantage, this year's event promises to showcase the next generation of European deep tech.</p>
       
