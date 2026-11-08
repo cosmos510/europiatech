@@ -4,10 +4,12 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
+import { articles } from '@/lib/articles';
 
 export default function PressPage() {
   const { scrollYProgress } = useScroll();
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
+  const articleCount = articles.length;
 
   return (
     <div style={{ position: 'relative' }}>
@@ -141,7 +143,7 @@ export default function PressPage() {
               style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
             >
               <p style={{ fontSize: '3rem', fontWeight: 800, color: 'var(--accent-tertiary)', lineHeight: 1 }}>
-                4
+                {articleCount}
               </p>
               <p className="text-mono" style={{ color: 'rgba(255,255,255,0.5)', marginTop: '0.5rem' }}>
                 Deep Analysis

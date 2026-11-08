@@ -2,8 +2,10 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { articles } from '@/lib/articles';
 
 export function Hero() {
+  const articleCount = articles.length;
   return (
     <section 
       style={{
@@ -138,7 +140,7 @@ export function Hero() {
           }}
         >
           <StatItem number="500+" label="Subscribers" />
-          <StatItem number="4" label="Deep Analysis" />
+          <StatItem number={articleCount.toString()} label="Deep Analysis" />
           <StatItem number="2026" label="AI Act Era" />
         </motion.div>
       </div>
