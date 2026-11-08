@@ -33,6 +33,7 @@ export async function POST(request: Request) {
         body: JSON.stringify({
           email: email,
           status: 'active',
+          groups: ['183935344868066788'], // subscribers group
         }),
       }
     );
