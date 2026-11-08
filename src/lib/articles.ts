@@ -14,6 +14,19 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: 'war-app-jeu-conquete-qui-personne-attend-tour',
+    title: 'War.app : Le jeu de conquête où personne n’attend son tour',
+    excerpt: 'War.app, anciennement Warzone, reste un jeu de stratégie en temps réel gratuit sur navigateur, où chaque joueur donne ses ordres simultanément, sans dés, après un partenariat avec Activision.',
+    tag: 'Gaming',
+    tagColor: 'violet',
+    date: 'November 8, 2026',
+    readTime: '5 min',
+    author: 'Maxime Martin',
+    content: `
+<p>Depuis son renommage en avril, War.app conserve l’essence de Warzone : une carte mondiale, des ordres donnés simultanément par tous les joueurs, sans dés, et un gameplay entièrement gratuit dans le navigateur, financé par de la publicité. Le partenariat avec Activision n’a pas modifié la mécanique de jeu, mais a permis d’officialiser la plateforme et d’ouvrir de nouvelles possibilités de monétisation tout en gardant l’expérience libre et accessible à tous.</p>
+    `,
+  },
+  {
     slug: 'london-tech-week-2026-european-ai',
     title: 'Preview: London Tech Week 2026 — European AI & Sovereign Tech',
     excerpt: 'Key European AI companies to watch, who we want to interview, and the sovereign infrastructure themes we\'ll track on the ground.',
