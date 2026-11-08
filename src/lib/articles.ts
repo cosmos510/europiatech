@@ -12,7 +12,20 @@ export interface Article {
   wide?: boolean;
 }
 
-export const articles: Article[] = [
+export const articles: Article[
+  {
+    slug: 'war-app-guerre-sans-tour-nouveau-nom-warzone-activision',
+    title: 'War.app : la guerre sans tour, le nouveau nom de Warzone après l\'accord avec Activision',
+    excerpt: 'Depuis avril, Warzone est rebaptisé War.app suite à un accord avec Activision. Le jeu reste inchangé : carte mondiale, ordres simultanés, pas de dés, gratuit en navigateur avec publicité.',
+    tag: 'Gaming',
+    tagColor: 'violet',
+    date: 'November 8, 2026',
+    readTime: '5 min',
+    author: 'Maxime Martin',
+    content: `
+<p>Warzone, le jeu de conquête en temps réel qui a fait sensation sur les réseaux sociaux, a officiellement changé de nom en War.app après un accord conclu avec Activision en avril. Le rebranding ne modifie rien du gameplay : les joueurs continuent de commander leurs armées sur une carte du monde, sans tour ni dés, et tout se joue simultanément.</p><p>Le principe reste simple mais addictif : chaque joueur envoie ses ordres en même temps que les autres, et les batailles se déroulent en temps réel. Cette mécanique unique élimine les frustrations liées aux tours, tout en conservant la tension stratégique qui fait la renommée du jeu.</p><p>War.app est totalement gratuit et accessible directement dans le navigateur, ce qui le rend très accessible. Le modèle économique repose sur la publicité intégrée, permettant aux développeurs de maintenir le service sans frais pour les joueurs.</p><p>La communauté a bien accueilli le changement de nom, voyant en War.app une évolution naturelle qui renforce l'identité du jeu tout en conservant son essence. Les joueurs attendent désormais de nouvelles mises à jour et extensions pour enrichir l'expérience globale.</p>
+    `,
+  },] = [
   {
     slug: 'london-tech-week-2026-european-ai',
     title: 'Preview: London Tech Week 2026 — European AI & Sovereign Tech',
