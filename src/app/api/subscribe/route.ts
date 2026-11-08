@@ -32,6 +32,7 @@ export async function POST(request: Request) {
         },
         body: JSON.stringify({
           email: email,
+          status: 'active',
         }),
       }
     );
