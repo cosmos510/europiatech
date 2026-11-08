@@ -14,6 +14,80 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: 'humanoid-robot-cleaning-apt-future',
+    title: 'When a Humanoid Robot Took Over My Cleaning Routine: A Glimpse Into the Future
+',
+    excerpt: 'I let a humanoid robot clean my apartment and was struck by how seamlessly it blended into my daily life. The experience felt like a preview of a world where chores are delegated to intelligent machines.',
+    tag: 'AI',
+    tagColor: 'violet',
+    date: 'November 8, 2026',
+    readTime: '5 min',
+    author: 'Maxime Martin',
+    content: `
+# When a Humanoid Robot Took Over My Cleaning Routine: A Glimpse Into the Future
+
+I’m not the sort of person who typically pays for a house cleaner. I’m too frugal, and I kind of enjoy putting on a podcast and going to town on my tub with a Magic Eraser. But when I saw an X post about a new humanoid‑robot cleaning service in San Francisco, I immediately signed up for a trial. What followed was a half‑hour that felt like stepping into a sci‑fi commercial, and it left me pondering how quickly the line between novelty and necessity is blurring.
+
+---
+
+## The Arrival
+
+The robot arrived in a sleek, matte‑black box that looked more like a high‑end speaker than a piece of industrial equipment. Inside was a 6‑foot‑tall, bipedal machine with a smooth, polymer skin, articulated joints, and a friendly LED face that displayed simple emoticons. A quick scan of my apartment’s floor plan was performed by a built‑in LiDAR system, mapping furniture, obstacles, and even the location of my beloved houseplants.
+
+The service’s app prompted me to select a “Standard Clean” or “Deep Clean.” I chose the former, curious to see how far the robot could go with a typical weekly sweep. Within minutes, the robot rolled out on its self‑balancing legs, humming a soft, almost musical whir as it began its routine.
+
+---
+
+## The Cleaning Process
+
+### Navigation and Perception
+
+What impressed me most was the robot’s ability to navigate my cramped studio without a single collision. It used a combination of LiDAR, depth cameras, and tactile sensors to detect edges, stairs, and even the slight incline of my rug. When it approached my bookshelf, it paused, scanned the spines, and adjusted its path to avoid knocking anything over. The robot’s facial display flickered a tiny smile each time it successfully avoided an obstacle.
+
+### Cleaning Techniques
+
+The robot employed a hybrid approach: a soft microfiber brush for dusting surfaces, a small vacuum module for carpeted areas, and a spray‑and‑wipe system for hard floors. It started in the kitchen, wiping down countertops with a gentle, non‑abrasive solution. The spray nozzle was calibrated to dispense just enough liquid to lift grime without leaving streaks. As it moved to the living room, the vacuum module activated, sucking up crumbs and pet hair with a suction power comparable to mid‑range consumer vacuums.
+
+When it reached my bathroom, the robot switched to a more aggressive mode, scrubbing the tile grout with a rotating brush. I could hear the faint vibration of the brush heads, but the robot maintained a steady, quiet hum throughout.
+
+---
+
+## Human‑Robot Interaction
+
+The experience was surprisingly personable. When the robot detected a spill I hadn’t noticed—a coffee ring on the floor—it paused, displayed a concerned frown, and then deployed a targeted cleaning cycle. After finishing a room, it would flash a thumbs‑up emoji and announce, “Room complete.” The voice prompts were optional, but they added a layer of reassurance that the robot was actively working.
+
+I also appreciated the transparency of the app. Real‑time maps showed the robot’s current location, and a log recorded the tasks performed, the amount of energy consumed, and the estimated time remaining. The robot returned to its charging dock autonomously when its battery dipped below 20%, then resumed cleaning once recharged.
+
+---
+
+## The Taste of the Future
+
+Watching a humanoid robot clean my apartment felt like a taste of a future where mundane chores are delegated to intelligent machines. It wasn’t just a gimmick; the robot performed the job efficiently, quietly, and with a level of care that rivaled a human cleaner. The technology behind it—advanced perception, adaptive locomotion, and AI‑driven task planning—has been in development for years, but seeing it in action in a real home environment was eye‑opening.
+
+### What This Means for Everyday Life
+
+1. **Time Reclamation** – For people like me who enjoy the ritual of cleaning, the robot offers a way to reclaim that time for more creative pursuits.
+2. **Accessibility** – Individuals with mobility challenges could benefit enormously from a service that handles floor‑level tasks without requiring human assistance.
+3. **Environmental Impact** – The robot’s efficient cleaning patterns reduce water and chemical usage compared to traditional methods.
+
+### Challenges Ahead
+
+Despite the impressive performance, there are hurdles to mainstream adoption. The cost of a single unit remains steep, and the service model is still in a pilot phase limited to a few urban neighborhoods. Additionally, privacy concerns linger; a robot equipped with cameras and microphones must be trusted to handle data responsibly.
+
+---
+
+## Final Thoughts
+
+My encounter with the humanoid cleaning robot left me both delighted and contemplative. It proved that the gap between science fiction and everyday reality is narrowing, and that AI‑powered robotics can integrate into our homes without feeling intrusive. While I may still enjoy the occasional Magic Eraser session, I now have a reliable backup that can step in when I’m too busy, too tired, or simply curious about what the future feels like.
+
+If you’re in a city where such services are available, I recommend giving it a try. Even if you end up preferring the tactile satisfaction of manual cleaning, you’ll gain a fresh perspective on how intelligent machines can augment—rather than replace—our daily routines.
+
+---
+
+*By [Your Name], Tech Journalist*
+    `,
+  },
+  {
     slug: 'war-app-jeu-conquete-qui-personne-attend-tour',
     title: 'War.app : Le jeu de conquête où personne n’attend son tour',
     excerpt: 'War.app, anciennement Warzone, reste un jeu de stratégie en temps réel gratuit sur navigateur, où chaque joueur donne ses ordres simultanément, sans dés, après un partenariat avec Activision.',
