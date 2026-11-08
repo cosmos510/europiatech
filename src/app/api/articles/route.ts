@@ -111,7 +111,8 @@ ${newArticle.content}
   },`;
 
     // Trouver où insérer (après "export const articles: Article[] = [")
-    const insertPoint = currentContent.indexOf('export const articles: Article[] = [');
+    const searchString = 'export const articles: Article[] = [';
+    const insertPoint = currentContent.indexOf(searchString);
     if (insertPoint === -1) {
       return NextResponse.json(
         { error: 'Could not find articles array in file' },
@@ -119,7 +120,7 @@ ${newArticle.content}
       );
     }
 
-    const arrayStart = currentContent.indexOf('[', insertPoint) + 1;
+    const arrayStart = insertPoint + searchString.length;
     const updatedContent = 
       currentContent.slice(0, arrayStart) + 
       '\n' + newArticleString + 
