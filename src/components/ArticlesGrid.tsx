@@ -2,59 +2,28 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { articles as allArticles } from '@/lib/articles';
 
-const articles = [
-  {
-    id: 1,
-    slug: 'london-tech-week-2026-european-ai',
-    title: 'Preview: London Tech Week 2026 — European AI & Sovereign Tech',
-    excerpt: 'Key European AI companies to watch, who we want to interview, and the sovereign infrastructure themes we\'ll track on the ground.',
-    tag: 'Event Preview',
-    tagColor: 'orange',
-    accentColor: 'var(--accent-primary)',
-    date: 'Feb 18, 2026',
-    readTime: '8 min',
-    size: 'featured', // 2x2
-  },
-  {
-    id: 2,
-    slug: 'european-ai-2026-sovereign-infrastructure',
-    title: 'The State of AI Innovation in Europe: 2026 Outlook',
-    excerpt: 'Mapping European AI initiatives — from Mistral AI\'s production-ready models to sovereign infrastructure projects.',
-    tag: 'Deep Tech',
-    tagColor: 'violet',
-    accentColor: 'var(--accent-secondary)',
-    date: 'Feb 15, 2026',
-    readTime: '12 min',
-    size: 'tall', // 1x2
-  },
-  {
-    id: 3,
-    slug: 'zero-trust-post-quantum-security-startups',
-    title: 'Zero Trust & Post-Quantum Security',
-    excerpt: 'The new security standards every European startup CTO should implement now.',
-    tag: 'Infrastructure',
-    tagColor: 'cyan',
-    accentColor: 'var(--accent-tertiary)',
-    date: 'Feb 12, 2026',
-    readTime: '9 min',
-    size: 'normal',
-  },
-  {
-    id: 4,
-    slug: 'tech-conferences-2026-ai-regulation-cloud',
-    title: '3 Key Themes at Tech Conferences 2026',
-    excerpt: 'AI regulation, cloud sovereignty and industrial cybersecurity — our technical reading grid for the year.',
-    tag: 'Event',
-    tagColor: 'lime',
-    accentColor: 'var(--accent-warm)',
-    date: 'Feb 8, 2026',
-    readTime: '7 min',
-    size: 'wide', // 2x1
-  },
-];
+// Map tag to accent color
+const tagColors: Record<string, string> = {
+  'Event Preview': 'var(--accent-primary)',
+  'Deep Tech': 'var(--accent-secondary)',
+  'Infrastructure': 'var(--accent-tertiary)',
+  'Event': 'var(--accent-warm)',
+  'Gaming': 'var(--accent-primary)',
+  'AI': 'var(--accent-secondary)',
+  'Security': 'var(--accent-tertiary)',
+  'Web': 'var(--accent-warm)',
+};
 
 export function ArticlesGrid() {
+  // Take latest 4 articles for the bento grid
+  const articles = allArticles.slice(0, 4).map((article, index) => ({
+    ...article,
+    accentColor: tagColors[article.tag] || 'var(--accent-primary)',
+    size: index === 0 ? 'featured' : index === 1 ? 'tall' : index === 3 ? 'wide' : 'normal',
+  }));
+
   return (
     <section id="articles" style={{ paddingTop: '6rem', paddingBottom: '6rem' }}>
       <div className="container-main">
@@ -87,52 +56,60 @@ export function ArticlesGrid() {
           }}
         >
           {/* Featured Article — 2 cols, 2 rows */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            style={{ gridColumn: 'span 2', gridRow: 'span 2' }}
-            className="bento-article-featured"
-          >
-            <ArticleCard article={articles[0]} isFeatured />
-          </motion.div>
+          {articles[0] && (
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              style={{ gridColumn: 'span 2', gridRow: 'span 2' }}
+              className="bento-article-featured"
+            >
+              <ArticleCard article={articles[0]} isFeatured />
+            </motion.div>
+          )}
 
           {/* Tall Article — 1 col, 2 rows */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            style={{ gridColumn: 'span 1', gridRow: 'span 2' }}
-            className="bento-article-tall"
-          >
-            <ArticleCard article={articles[1]} />
-          </motion.div>
+          {articles[1] && (
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              style={{ gridColumn: 'span 1', gridRow: 'span 2' }}
+              className="bento-article-tall"
+            >
+              <ArticleCard article={articles[1]} />
+            </motion.div>
+          )}
 
           {/* Normal Article */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            style={{ gridColumn: 'span 1', gridRow: 'span 1' }}
-            className="bento-article-normal"
-          >
-            <ArticleCard article={articles[2]} isCompact />
-          </motion.div>
+          {articles[2] && (
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              style={{ gridColumn: 'span 1', gridRow: 'span 1' }}
+              className="bento-article-normal"
+            >
+              <ArticleCard article={articles[2]} isCompact />
+            </motion.div>
+          )}
 
           {/* Wide Article — 2 cols */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            style={{ gridColumn: 'span 2', gridRow: 'span 1' }}
-            className="bento-article-wide"
-          >
-            <ArticleCard article={articles[3]} isWide />
-          </motion.div>
+          {articles[3] && (
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              style={{ gridColumn: 'span 2', gridRow: 'span 1' }}
+              className="bento-article-wide"
+            >
+              <ArticleCard article={articles[3]} isWide />
+            </motion.div>
+          )}
         </div>
       </div>
     </section>
