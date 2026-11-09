@@ -144,40 +144,6 @@ export const articles: Article[] = [
     `,
   },
   {
-    slug: 'humanoid-robot-cleaning-apartment-future',
-    title: 'I Watched a Humanoid Robot Clean My Apartment: A Taste of the Future',
-    excerpt: 'A frugal podcaster tried a new humanoid-robot cleaning service in San Francisco and was surprised by the seamless blend of tech and domestic chores.',
-    tag: 'AI',
-    tagColor: 'pink',
-    date: 'November 8, 2026',
-    readTime: '6 min',
-    author: 'Maxime Martin',
-    content: `
-<p class="dropcap">When I first saw the X post about a new humanoid-robot cleaning service launching in San Francisco, my immediate reaction was skepticism. I'm the kind of person who clings to a Magic Eraser and a strong sense of frugality. Yet curiosity got the better of me, and I signed up for a trial.</p>
-
-<h2>The Arrival</h2>
-<p>The robot arrived in a sleek, matte-black box that looked more like a piece of modern art than a cleaning appliance. Inside was a compact, bipedal machine with articulated joints, a soft-touch silicone exterior, and a small screen displaying a friendly animated face.</p>
-
-<h2>First Impressions</h2>
-<p>Within seconds, the robot stood up, performed a quick self-diagnostic, and began scanning the room with lidar and depth cameras. The first thing that struck me was the quiet operation—unlike traditional vacuums, it moved with a soft, almost inaudible hum.</p>
-
-<h2>The Human-Like Touch</h2>
-<p>What truly set the experience apart was the robot's humanoid behavior. When it encountered a pile of laundry, it paused, tilted its head, and used its hands to pick up each item. The robot even responded to voice commands with a polite nod on its screen.</p>
-
-<h2>Performance Evaluation</h2>
-<ul>
-  <li><strong>Speed:</strong> Full apartment clean in about 45 minutes</li>
-  <li><strong>Quality:</strong> Floors spotless, countertops gleaming, even hard-to-reach corners dust-free</li>
-  <li><strong>Energy:</strong> Rechargeable battery lasts a full cleaning cycle</li>
-</ul>
-
-<h2>The Bigger Picture</h2>
-<p>Watching a humanoid robot handle mundane chores feels like a glimpse into a future where AI-powered assistants become an extension of our daily lives. The technology combines advances in computer vision, natural language processing, and robotics that were once confined to research labs.</p>
-
-<p><strong>Bottom line:</strong> The future of home maintenance is already here, and it walks on two legs, smiles on a screen, and leaves your floors sparkling.</p>
-    `,
-  },
-  {
     slug: 'london-tech-week-2026-european-ai',
     title: 'Preview: London Tech Week 2026 — European AI & Sovereign Tech',
     excerpt: 'Key European AI companies to watch, who we want to interview, and the sovereign infrastructure themes we\'ll track on the ground.',
