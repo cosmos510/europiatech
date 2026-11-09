@@ -14,6 +14,64 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: 'ai-everyday-life-european-perspective',
+    title: 'AI in Everyday Life: Smart Tool or Artificial Threat? A European Perspective',
+    excerpt: 'ChatGPT has sparked debate across Europe, from classrooms in Lyon to policy halls in Brussels. This article examines the benefits, limits and regulatory challenges of AI in the European context.',
+    tag: 'AI',
+    tagColor: 'violet',
+    date: 'November 9, 2026',
+    readTime: '5 min',
+    author: 'Maxime Martin',
+    content: `
+<h2>Introduction</h2>
+<p>Artificial intelligence is no longer a futuristic concept – it is part of daily life across Europe. From the way we shop on Amazon to how doctors in Berlin diagnose disease, AI tools such as OpenAI’s ChatGPT are reshaping work, education and public services. Yet the rapid diffusion of generative AI raises questions that are uniquely European: how do we balance innovation with the EU’s strong data‑privacy culture, and what role should the upcoming AI Act play in schools and businesses? This article rewrites a recent French piece for an English‑speaking European audience, highlighting the opportunities, the pitfalls and the policy response that could shape the continent’s AI future.</p>
+<hr>
+<h2>Testing ChatGPT: A Sample Dissertation Outline</h2>
+<p>To illustrate the capabilities of the tool, we asked ChatGPT to draft a dissertation plan on &quot;The Place of Artificial Intelligence in Contemporary Society&quot;. The model produced a clear three‑part structure:</p>
+<p><strong>Introduction</strong> – definition, growing importance, roadmap.</p>
+<p><strong>I. Benefits</strong> – industry efficiency, medical breakthroughs, transport safety.</p>
+<p><strong>II. Limits</strong> – job displacement, privacy and data‑protection concerns, surveillance risks.</p>
+<p><strong>III. Challenges</strong> – economic opportunities, regulatory needs, education and skills.</p>
+<p><strong>Conclusion</strong> – synthesis, call for responsible use.</p>
+<p>The outline is well‑structured, but the model itself offered a self‑critique, noting that it could have expanded on sectors such as energy, agriculture and the environment, added nuance to the discussion of risks, and provided concrete examples of European policy initiatives.</p>
+<hr>
+<h2>Why European Educators Are Worried</h2>
+<p>The headline that grabbed European media this spring was that half of a Lyon university cohort had used ChatGPT to complete a take‑home assignment. The professor, bewildered, gave the AI a grade of 11.75/20. The incident mirrors earlier anxieties when the internet and Wikipedia first entered classrooms. Yet the EU’s response differs because of its tradition of strong public oversight and a growing regulatory framework.</p>
+<h3>The Risk of Academic Dishonesty</h3>
+<p>AI‑generated text can be indistinguishable from a diligent student’s work. Some universities in France, the United Kingdom and the United States have already banned the use of ChatGPT for assessments. In Europe, the response has been more measured: institutions are investing in detection tools, revising assessment design to emphasise oral presentations, collaborative projects and in‑exam writing that limits the chance of covert AI assistance.</p>
+<h3>Disinformation and Plagiarism</h3>
+<p>Beyond cheating, generative AI can produce plausible but false information, a problem amplified by the EU’s commitment to combatting misinformation. When ChatGPT fabricates sources or cites outdated research, students may inadvertently propagate errors. European media literacy programmes now include modules on AI‑generated content, teaching learners to fact‑check, cross‑reference sources and question the provenance of any claim.</p>
+<hr>
+<h2>The European Regulatory Landscape</h2>
+<p>The European Union is pioneering a comprehensive approach to AI governance. The proposed <strong>AI Act</strong> classifies AI systems into risk categories and imposes transparency, accountability and conformity‑assessment obligations on high‑risk applications – including those used in education and public administration.</p>
+<ul>
+<li><strong>Transparency</strong>: AI tools must disclose that they are non‑human and provide users with information about the data and algorithms behind the output.</li>
+<li><strong>Data Governance</strong>: The General Data Protection Regulation (GDPR) already limits the processing of personal data, and the AI Act will extend safeguards to biometric and profiling systems.</li>
+<li><strong>Human Oversight</strong>: High‑risk AI must allow for meaningful human intervention, ensuring that teachers retain final authority over grading and feedback.</li>
+</ul>
+<p>These rules aim to preserve the benefits of AI while protecting fundamental European values such as privacy, fairness and democratic participation.</p>
+<hr>
+<h2>Practical Recommendations for European Schools</h2>
+<ol>
+<li><strong>Integrate AI Literacy</strong> – Curriculum designers should embed modules that explain how large language models work, their limitations and ethical implications. The European Commission’s <em>Digital Education Action Plan</em> provides resources for teachers.</li>
+<li><strong>Adopt AI‑Assisted Assessment</strong> – Rather than banning AI outright, schools can use it as a supportive tool for drafting feedback, spotting plagiarism or generating personalised learning pathways.</li>
+<li><strong>Promote Collaborative Projects</strong> – Group‑based tasks that require real‑time interaction reduce the incentive to rely solely on AI and foster critical thinking.</li>
+<li><strong>Leverage Detection Software</strong> – Solutions such as Turnitin’s AI‑detector or open‑source classifiers can flag suspicious submissions, but they should be used as a starting point for dialogue, not punitive enforcement.</li>
+<li><strong>Encourage Open‑Source Alternatives</strong> – European research institutions are developing locally hosted models that comply with GDPR, offering a sovereign alternative to US‑based services.</li>
+</ol>
+<hr>
+<h2>The Broader Societal Impact</h2>
+<p>AI’s influence extends far beyond the classroom. In the European Union, AI is already driving efficiency in manufacturing hubs in Italy’s Lombardy region, improving diagnostic imaging in Dutch hospitals, and optimising traffic flow in Barcelona’s smart‑city initiatives. However, the same technology can exacerbate inequalities if access is uneven or if biased datasets reinforce existing disparities.</p>
+<p>The EU’s emphasis on <strong>responsible AI</strong> seeks to ensure that the technology serves the public good. Initiatives such as the <em>European AI Alliance</em> bring together industry, academia and civil society to co‑design standards that reflect European cultural diversity and social welfare priorities.</p>
+<hr>
+<h2>Conclusion</h2>
+<p>ChatGPT demonstrates both the promise and the perils of generative AI. In Europe, the conversation is not limited to whether the tool can write a dissertation; it is about how societies can harness AI responsibly while safeguarding privacy, transparency and democratic values. By embedding AI literacy in education, adopting proportionate regulation through the AI Act, and fostering a culture of critical inquiry, Europe can turn what might be seen as an artificial threat into a truly intelligent ally for the continent’s future.</p>
+<hr>
+<p><em>For further reading on combating misinformation and developing good digital practices, visit Numérique Éthique’s dedicated learning pathway.</em></p>
+
+    `,
+  },
+  {
     slug: 'european-developers-embrace-ai-agents-github-pull-requests',
     title: 'European Developers Embrace AI Agents as They Power Over 40% of GitHub Pull Requests',
     excerpt: 'GitHub’s Octoverse 2026 report shows that AI‑generated drafts now start more than 40 % of pull requests, a trend that is reshaping software development across the continent. European teams are adopting Copilot’s agentic features at record speed, while navigating new EU AI regulations and security standards.',
