@@ -107,60 +107,6 @@ export const articles: Article[] = [
     `,
   },
   {
-    slug: 'rise-of-generative-ai-creative-industries',
-    title: 'The Rise of Generative AI in Creative Industries',
-    excerpt: 'Generative AI is reshaping how artists, designers, and marketers produce content, offering new tools that blend human imagination with machine efficiency. While the technology unlocks unprecedented creative possibilities, it also raises questions about authorship, ethics, and the future of creative work.',
-    tag: 'AI',
-    tagColor: 'violet',
-    date: 'November 9, 2026',
-    readTime: '5 min',
-    author: 'Maxime Martin',
-    content: `
-<h1>The Rise of Generative AI in Creative Industries</h1>
-<p><em>By Tech Journalist – November 9, 2026</em></p>
-<hr>
-<h2>Introduction</h2>
-<p>In the past few years, generative artificial intelligence has moved from a niche research curiosity to a mainstream engine powering everything from text and image creation to music composition and video editing. Platforms like OpenAI’s GPT‑4o, Stability AI’s Stable Diffusion 3, and Adobe’s Firefly suite have democratized access to sophisticated models, allowing creators of all skill levels to generate high‑quality content with a few clicks or prompts. This shift is not merely a technical novelty; it is fundamentally altering the workflows, economics, and cultural narratives of the creative industries.</p>
-<hr>
-<h2>How Generative AI Works – A Brief Overview</h2>
-<p>At its core, generative AI relies on deep neural networks trained on massive datasets of existing media. For text, large‑language models (LLMs) predict the next word in a sequence, learning grammar, facts, and stylistic nuances. For images, diffusion models iteratively refine random noise into coherent pictures based on learned visual patterns. Recent multimodal models combine these capabilities, enabling cross‑modal generation—turning a textual description into a photorealistic illustration, or converting a melody into a full orchestral arrangement.</p>
-<p>The key breakthrough that has accelerated adoption is <strong>prompt engineering</strong>: users can guide models with natural‑language instructions, adjusting style, tone, and composition without needing to understand the underlying code. Coupled with user‑friendly interfaces—plugins for Photoshop, web‑based canvases, and mobile apps—this has lowered the barrier to entry dramatically.</p>
-<hr>
-<h2>Transforming Creative Workflows</h2>
-<h3>1. Content Creation at Scale</h3>
-<p>Marketing teams now generate dozens of ad variations in minutes, testing copy, imagery, and calls‑to‑action across demographics. Brands such as Nike and Spotify use AI‑generated concepts to A/B test visual assets before committing to expensive photo shoots. The speed of iteration shortens campaign cycles and reduces costs.</p>
-<h3>2. Democratizing Design</h3>
-<p>Independent creators, small businesses, and hobbyists can produce professional‑looking graphics without hiring a designer. Tools like Canva’s AI Magic Write and Adobe Firefly let users type <em>&quot;modern minimalist logo for a coffee shop&quot;</em> and receive multiple polished options instantly. This empowerment expands the pool of visual content on the internet, but also intensifies competition for attention.</p>
-<h3>3. Enhancing Artistic Exploration</h3>
-<p>Artists are using generative models as collaborative partners. Painter Refik Anadol blends AI‑generated visualizations with physical installations, while musicians like Holly Herndon employ AI‑driven vocal synthesis to explore new timbres. The technology acts as a catalyst for experimentation, offering ideas that might never emerge through traditional brainstorming.</p>
-<hr>
-<h2>Economic Implications</h2>
-<p>The productivity boost translates into measurable financial impact. A 2025 McKinsey report estimated that generative AI could add <strong>$2.6 trillion</strong> to the global creative economy by 2030, primarily through cost savings and new revenue streams. However, the displacement risk is real: routine tasks such as copy editing, basic illustration, and video captioning are increasingly automated. Companies are re‑skilling staff to become <em>prompt engineers</em>—professionals who craft effective inputs and curate model outputs.</p>
-<hr>
-<h2>Ethical and Legal Challenges</h2>
-<h3>Authorship and Ownership</h3>
-<p>When an AI generates a piece of art, who owns the copyright? Current legislation varies by jurisdiction, and many courts have ruled that works lacking human authorship are not eligible for protection. This creates a gray area for platforms that sell AI‑generated assets, prompting new licensing models that share revenue between the user, the model provider, and the original data contributors.</p>
-<h3>Bias and Representation</h3>
-<p>Generative models inherit biases present in their training data. Early versions of image generators struggled with accurate representation of under‑represented groups, often producing stereotypical or distorted depictions. Ongoing research focuses on <em>dataset curation</em> and <em>fairness tuning</em> to mitigate these issues, but the problem remains a focal point for advocacy groups.</p>
-<h3>Deepfakes and Misinformation</h3>
-<p>The same technology that can create a stunning illustration can also fabricate realistic videos of public figures saying things they never said. Regulatory bodies worldwide are drafting policies that require watermarking of AI‑generated media and penalize malicious misuse. Content platforms are integrating detection tools that flag synthetic media for human review.</p>
-<hr>
-<h2>The Future Landscape</h2>
-<p>Looking ahead, we can expect three major trends:</p>
-<ol>
-<li><strong>Hybrid Human‑AI Studios</strong> – Studios will embed AI directly into the creative pipeline, with artists supervising and refining AI outputs in real time.</li>
-<li><strong>Personalized AI Assistants</strong> – Creators will have bespoke models trained on their own style, enabling truly individualized assistance that respects intellectual property.</li>
-<li><strong>Regulatory Standardization</strong> – International bodies will converge on standards for transparency, attribution, and ethical use, shaping how AI‑generated content is disclosed and monetized.</li>
-</ol>
-<hr>
-<h2>Conclusion</h2>
-<p>Generative AI is no longer a futuristic concept; it is an active force reshaping the creative industries. By amplifying human imagination, reducing production costs, and opening doors for new forms of expression, it offers a compelling vision of a collaborative future. Yet, the technology also forces us to confront difficult questions about ownership, bias, and the authenticity of art. The balance we strike between innovation and responsibility will determine whether generative AI becomes a tool that elevates creativity for all or a disruptive force that marginalizes the very creators it promises to empower.</p>
-<hr>
-<p><em>For more insights on AI trends, subscribe to our weekly newsletter and follow us on Twitter @TechJournalist.</em></p>
-
-    `,
-  },
-  {
     slug: 'innovating-with-ai-specialty-chemicals',
     title: 'Innovating with AI: Transforming the Specialty Chemicals Industry',
     excerpt: 'Specialty chemicals makers are turning to artificial intelligence, cloud computing, and advanced modeling to speed up product development. Lubrizol’s digital transformation shows how data, scientific expertise, and market realities can be aligned for faster, smarter innovation.',
