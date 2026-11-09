@@ -14,6 +14,41 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: 'european-developers-embrace-ai-agents-github-pull-requests',
+    title: 'European Developers Embrace AI Agents as They Power Over 40% of GitHub Pull Requests',
+    excerpt: 'GitHub’s Octoverse 2026 report shows that AI‑generated drafts now start more than 40 % of pull requests, a trend that is reshaping software development across the continent. European teams are adopting Copilot’s agentic features at record speed, while navigating new EU AI regulations and security standards.',
+    tag: 'AI',
+    tagColor: 'violet',
+    date: 'November 9, 2026',
+    readTime: '5 min',
+    author: 'Maxime Martin',
+    content: `
+<h2>Surge of AI‑Generated Pull Requests Across Europe</h2>
+<p>GitHub’s latest Octoverse 2026 report reveals that <strong>over 40 % of pull requests in September 2026 began as drafts created by AI agents</strong>, up from just 17 % in March. That translates to <strong>110 million agent‑started pull requests in a single month</strong>, roughly six times the volume recorded earlier in the year. The data, collected from October 1 2025 to September 30 2026, reflects a rapid shift in how European developers write, review, and merge code.</p>
+<h2>Agents Tackling Complex Code Across the Continent</h2>
+<p>The report highlights that <strong>87 % of AI‑initiated pull requests touched multiple files</strong>, compared with 79 % for human‑only submissions. This suggests that agents are increasingly being trusted with larger, more intricate changes—something that resonates with the needs of European enterprises handling multilingual applications, fintech platforms, and regulated data pipelines.</p>
+<p>Mergers are also speeding up: the proportion of agent‑involved pull requests merged within two weeks rose from <strong>83 % in February to 90 % in September</strong>, while non‑agent pull requests hovered around 86 %. Although the metric measures speed rather than code quality, it signals that European teams are gaining confidence in AI‑driven workflows.</p>
+<h2>Copilot’s Agentic Features Gain Traction in EU Workforces</h2>
+<p>GitHub reports that <strong>55 % of monthly active Copilot users now employ agentic capabilities</strong>, a jump from 35 % a year earlier. The cloud‑agent, which lets developers assign autonomous tasks to an AI, saw a <strong>230 % year‑over‑year increase</strong>, and agent‑chat usage grew <strong>85 %</strong>.</p>
+<p>For European developers, this growth aligns with a broader push toward remote‑first collaboration. Copilot Projects, now in public preview, lets teams coordinate agents across multiple repositories while feeding context from design documents, Slack channels, and meeting notes—features that dovetail with the EU’s emphasis on transparent, auditable development processes.</p>
+<h2>New Collaboration Tools Boost European Teams</h2>
+<p>GitHub’s <strong>stacked pull requests</strong> feature, introduced in public preview in July and made generally available on October 6, has already been adopted by more than <strong>264 000 developers</strong>. By breaking large changes into smaller, reviewable units, the feature helped repositories using it achieve a <strong>9 % increase in merged code</strong> compared with peers during the preview period. Notably, <strong>over two‑thirds of the top 1 % of repositories</strong>—many belonging to European SaaS providers and research institutions—have adopted stacked pull requests, reporting a <strong>5 % reduction in time‑to‑merge</strong>.</p>
+<p>David Mostoller, a software engineer at Comcast, praised the impact on collaborative reviews, a sentiment echoed by many EU‑based teams that value rapid yet rigorous code inspection.</p>
+<h2>Security and Maintenance Tools Strengthen EU Codebases</h2>
+<p>AI‑assisted code review and <strong>GitHub Advanced Security</strong> both grew by more than <strong>90 % year‑over‑year</strong>, reflecting heightened security awareness across the continent, especially in light of the EU’s <strong>Cybersecurity Act</strong> and upcoming <strong>AI Act</strong> provisions.</p>
+<p>Developers merged <strong>over 30 million Dependabot pull requests</strong>, roughly double the 2025 volume, automating dependency updates and mitigating known vulnerabilities. Additionally, the <strong>agentic autofix</strong> feature, generally available from October 15, lets developers assign up to 25 code‑scanning alerts to Copilot. The AI then proposes fixes, re‑runs CodeQL for validation, and opens a draft pull request with a detailed explanation. This capability is currently available to eligible GitHub Enterprise Cloud customers, many of which are large European enterprises subject to strict compliance regimes.</p>
+<h2>Looking Ahead: European AI Regulations and Developer Practices</h2>
+<p>The surge in AI‑driven development coincides with the EU’s <strong>Artificial Intelligence Act</strong>, which will soon impose transparency, risk‑assessment, and documentation requirements on high‑risk AI systems—including code‑generation agents used in production environments. European developers are therefore beginning to embed logging, model‑explainability, and human‑in‑the‑loop safeguards into their CI/CD pipelines.</p>
+<p>GitHub’s new <strong>Copilot approvals</strong> feature—allowing AI‑generated approvals to count toward repository policies—offers administrators the ability to restrict which file paths the AI may approve, a useful control for organizations navigating the AI Act’s conformity obligations.</p>
+<h2>Events and Resources for the European Community</h2>
+<p>Developers interested in deepening their understanding of AI‑augmented development can attend the <strong>AI &amp; Big Data Expo</strong>, taking place in <strong>Amsterdam, London, and Berlin</strong> later this year. The event, co‑located with TechEx, will showcase sessions on machine‑learning pipelines, AI‑driven security, and compliance strategies for the EU market.</p>
+<p>For further reading, see GitHub’s full Octoverse 2026 report and the related analysis on why many AI agents never progress beyond the demo stage.</p>
+<hr>
+<p><em>Photo by Roman Synkevych</em></p>
+
+    `,
+  },
+  {
     slug: 'rise-of-generative-ai-creative-industries',
     title: 'The Rise of Generative AI in Creative Industries',
     excerpt: 'Generative AI is reshaping how artists, designers, and marketers produce content, offering new tools that blend human imagination with machine efficiency. While the technology unlocks unprecedented creative possibilities, it also raises questions about authorship, ethics, and the future of creative work.',
