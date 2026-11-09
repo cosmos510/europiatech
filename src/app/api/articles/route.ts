@@ -222,3 +222,124 @@ export async function GET(request: Request) {
     })),
   });
 }
+
+// DELETE pour supprimer un article par slug
+export async function DELETE(request: Request) {
+  try {
+    // Vérifier l'API key
+    const authHeader = request.headers.get('authorization');
+    const apiKey = process.env.ARTICLES_API_KEY;
+
+    if (!apiKey || authHeader !== `Bearer ${apiKey}`) {
+      return NextResponse.json(
+        { error: 'Unauthorized' },
+        { status: 401 }
+      );
+    }
+
+    const { slug } = await request.json();
+
+    if (!slug) {
+      return NextResponse.json(
+        { error: 'Missing required field: slug' },
+        { status: 400 }
+      );
+    }
+
+    // GitHub API config
+    const githubToken = process.env.GITHUB_TOKEN;
+    const repoOwner = process.env.GITHUB_REPO_OWNER || 'cosmos510';
+    const repoName = process.env.GITHUB_REPO_NAME || 'blog-tech';
+    const branch = process.env.GITHUB_BRANCH || 'main';
+    const filePath = 'src/lib/articles.ts';
+
+    if (!githubToken) {
+      return NextResponse.json(
+        { error: 'GitHub token not configured' },
+        { status: 500 }
+      );
+    }
+
+    // 1. Récupérer le fichier actuel
+    const getFileResponse = await fetch(
+      `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}?ref=${branch}`,
+      {
+        headers: {
+          'Authorization': `Bearer ${githubToken}`,
+          'Accept': 'application/vnd.github.v3+json',
+        },
+      }
+    );
+
+    if (!getFileResponse.ok) {
+      const error = await getFileResponse.json();
+      return NextResponse.json(
+        { error: 'Failed to fetch current articles file', details: error },
+        { status: 500 }
+      );
+    }
+
+    const fileData = await getFileResponse.json();
+    const currentContent = Buffer.from(fileData.content, 'base64').toString('utf-8');
+
+    // 2. Trouver et supprimer l'article
+    // Pattern pour matcher un article complet par son slug
+    const articlePattern = new RegExp(
+      `\\s*\\{\\s*slug:\\s*['"\`]${slug}['"\`][^}]*content:\\s*\`[^\`]*\`\\s*,?\\s*\\},?`,
+      's'
+    );
+
+    if (!articlePattern.test(currentContent)) {
+      return NextResponse.json(
+        { error: `Article with slug "${slug}" not found` },
+        { status: 404 }
+      );
+    }
+
+    const updatedContent = currentContent.replace(articlePattern, '');
+
+    // 3. Commit le fichier mis à jour
+    const commitResponse = await fetch(
+      `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`,
+      {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${githubToken}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: `feat: delete article "${slug}"`,
+          content: Buffer.from(updatedContent).toString('base64'),
+          sha: fileData.sha,
+          branch,
+        }),
+      }
+    );
+
+    if (!commitResponse.ok) {
+      const error = await commitResponse.json();
+      return NextResponse.json(
+        { error: 'Failed to commit article deletion', details: error },
+        { status: 500 }
+      );
+    }
+
+    const commitData = await commitResponse.json();
+
+    return NextResponse.json({
+      success: true,
+      deleted: slug,
+      commit: {
+        sha: commitData.commit.sha,
+        url: commitData.commit.html_url,
+      },
+    });
+
+  } catch (error) {
+    return NextResponse.json(
+      { error: 'Failed to delete article', details: error instanceof Error ? error.message : 'Unknown error' },
+      { status: 500 }
+    );
+  }
+}
