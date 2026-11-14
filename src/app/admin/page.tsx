@@ -117,10 +117,11 @@ export default function AdminPage() {
 
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
-              <label className="block text-zinc-400 text-sm mb-2">
+              <label htmlFor="admin-password" className="block text-zinc-400 text-sm mb-2">
                 Mot de passe
               </label>
               <input
+                id="admin-password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
