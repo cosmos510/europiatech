@@ -48,7 +48,7 @@ export function Navigation() {
         <NavLink href="/articles">Articles</NavLink>
         <NavLink href="/#about">About</NavLink>
         <NavLink href="/press">Press</NavLink>
-      <Link href="/#newsletter" className="btn-brutal" aria-label="Subscribe to newsletter">
+        <Link href="/#newsletter" className="btn-brutal" aria-label="Subscribe to newsletter">
           Subscribe
         </Link>
       </div>
