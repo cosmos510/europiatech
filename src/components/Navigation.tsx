@@ -48,7 +48,7 @@ export function Navigation() {
         <NavLink href="/articles">Articles</NavLink>
         <NavLink href="/#about">About</NavLink>
         <NavLink href="/press">Press</NavLink>
-        <Link href="/#newsletter" className="btn-brutal">
+      <Link href="/#newsletter" className="btn-brutal" aria-label="Subscribe to newsletter">
           Subscribe
         </Link>
       </div>
@@ -120,6 +120,7 @@ export function Navigation() {
                 href="/#newsletter" 
                 className="btn-brutal"
                 onClick={() => setIsMobileMenuOpen(false)}
+                aria-label="Subscribe to newsletter"
                 style={{ marginTop: '1rem' }}
               >
                 Subscribe
@@ -143,8 +144,6 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
         transition: 'color 0.3s',
         position: 'relative',
       }}
-      onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
-      onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.6)'}
     >
       {children}
     </Link>
@@ -173,8 +172,6 @@ function MobileNavLink({
         borderBottom: '1px solid rgba(255,255,255,0.1)',
         transition: 'color 0.3s',
       }}
-      onMouseEnter={(e) => e.currentTarget.style.color = 'white'}
-      onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255,255,255,0.8)'}
     >
       {children}
     </Link>
